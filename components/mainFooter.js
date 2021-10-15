@@ -39,7 +39,7 @@ export class footer extends Component {
             <p className={styles.bottom__button}>
               <a href={this.state.project}>Project →</a>
             </p>
-            <Link href={this.state.contact}>
+            <Link href={this.state.contact} passHref={true}>
               <p className={styles.bottom__button} onClick={handler}>
                 Contact →
               </p>
