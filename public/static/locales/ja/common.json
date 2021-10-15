@@ -1,0 +1,34 @@
+{
+  "service": {
+    "subTitle": "「Oovo Deve」は流行のNoCodeやコーディングで開発を行い、制作後のマーケティングサポートまで行います。"
+  },
+  "point": {
+    "mainTitle": "ビジネス思考",
+    "subTitle": "技術選定とサポートをビジネスの成功のために",
+    "description": "ビジネスの成功において重要なのは、より高度な技術ではなく「問題解決ができるか否か」だと考え、「Oovo Deve」はそれに基づいた技術を選定します。また制作後のマーケティングを意識したものとサポートをご提供します。"
+  },
+  "project": {
+    "subTitle": "「Oovo Deve」制作実績の一部",
+    "sns": "オンラインサロン向けSNS(iOS)",
+    "medic": "医療情報共有アプリ(iOS/Android)",
+    "nocode": "NoCodeプラットフォーム「Adalo」のコンポーネント開発",
+    "chatbot": "Discordサーバー用Chatbotの開発",
+    "alexa": "バーチャルアシスタント「Alexa」のスキル開発",
+    "other": "など"
+  },
+  "contact": {
+    "back": "戻る",
+    "contact": "お問い合わせフォーム",
+    "name": "事業者名 / 法人名",
+    "mailAddress": "メールアドレス",
+    "tel": "電話番号",
+    "content": "お問い合わせ内容",
+    "placefolder": "お問い合わせ内容をご入力ください",
+    "submit": "送信"
+  },
+  "sub": {
+    "popularTitle": "人気の記事",
+    "relationTitle": "関連の記事",
+    "preparationText": "ただいま準備中です"
+  }
+}

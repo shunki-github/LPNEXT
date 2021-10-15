@@ -1,0 +1,61 @@
+.big {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  cursor: pointer;
+}
+
+.big__icon {
+  display: block;
+  /*
+  background-image: url(../../public/makaserulogo.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  */
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 0 0 0 5px;
+}
+
+.big__name {
+  display: block;
+  /*
+  background-image: url(../../public/MAKASERU.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  */
+  width: 200px;
+  height: 60px;
+  position: relative;
+  margin: 3px 0 0 0;
+}
+
+.midium {
+  position: relative;
+  margin: 0% 0% 0% 3%;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.midium__icon {
+  /*
+  background-image: url(../../public/makaserulogo.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  */
+  height: 62px;
+  width: 62px;
+}
+
+.midium__name {
+  /*
+  background-image: url(../../public/MAKASERU.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  */
+  height: 80px;
+  width: 200px;
+  margin-top: 2px;
+}

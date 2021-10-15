@@ -1,0 +1,34 @@
+{
+  "service": {
+    "subTitle": "「Oovo Deve」 develop with trendy NoCode and coding, and even provide marketing support after production."
+  },
+  "point": {
+    "mainTitle": "Thinking about Business",
+    "subTitle": "Technology selection and support for business success",
+    "description": "The key to business success is not more advanced technology, but the ability to solve problems.\n\n「Oovo Deve」 select the most appropriate technology.\nWe also provide post-production marketing awareness and support."
+  },
+  "project": {
+    "subTitle": "Some of 「Oovo Deve」 production achievements",
+    "sns": "SNS for Online Salon (iOS)",
+    "medic": "Medical information sharing application (iOS/Android)",
+    "nocode": "Component development for NoCode platform ‘Adalo'",
+    "chatbot": "Development of Chatbot for Discord server",
+    "alexa": "Skill development for Alexa, the virtual assistant",
+    "other": "etc."
+  },
+  "contact": {
+    "back": "back",
+    "contact": "Contact",
+    "name": "Company Name",
+    "mailAddress": "Email address",
+    "tel": "Phone Number",
+    "content": "Inquiry",
+    "placefolder": "Please enter the details of your inquiry",
+    "submit": "Subimit"
+  },
+  "sub": {
+    "popularTitle": "Popular Articles",
+    "relationTitle": "Related Articles",
+    "preparationText": "We're preparing."
+  }
+}
