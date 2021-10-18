@@ -50,8 +50,13 @@ export class header extends Component {
               <div>
                 <a href="#project">{naviNormal("Project")}</a>
               </div>
+              <div>
+                <Link href="/blog" passHref={true}>
+                    <div>{naviNormal("Blog")}</div>
+                </Link>
+              </div>
               <div onClick={handler}>
-                <Link href="/contact">
+                <Link href="/contact" passHref={true}>
                   <div>{naviOrange("Contact")}</div>
                 </Link>
               </div>

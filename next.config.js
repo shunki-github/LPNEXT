@@ -43,7 +43,7 @@ module.exports = {
   reactStrictMode: true,
   env: {
     NEXT_PUBLIC_LOGO_ICON_PATH: process.env.NEXT_PUBLIC_LOGO_ICON_PATH,
-    NEXT_PUBLIC_LOGO_NAME_PATH: process.env.NEXT_PUBLIC_LOGO_NAME_PATH
+    NEXT_PUBLIC_LOGO_NAME_PATH: process.env.NEXT_PUBLIC_LOGO_NAME_PATH,
   },
   images: {
     domains: ['media.graphcms.com'],

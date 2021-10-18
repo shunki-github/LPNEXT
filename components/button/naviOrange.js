@@ -10,6 +10,7 @@ export default function naviOrange(text) {
         transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
         border="1px"
         px="20px"
+        width="100px"
         borderRadius="8px"
         fontSize="14px"
         fontWeight="semibold"
