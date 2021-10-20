@@ -3,7 +3,7 @@
     /*background-color: blue;*/
     /*background-image: url(../public/headerCover.png);*/
     /*background-image: url(../public/headerTest1.jpg);*/
-    background-image: url(../public/headerTest2.webp);
+    background-image: url(../../public/headerTest2.webp);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;

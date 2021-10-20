@@ -1,6 +1,6 @@
 import styles from "../styles/404.module.css";
 import Head from "next/head";
-import bigLogo from "../components/logo";
+import bigLogo from "../components/utils/logo";
 
 export default function Custom404() {
   return(

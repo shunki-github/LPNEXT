@@ -18,11 +18,11 @@ import React, { useState } from "react";
 //  GoogleReCaptcha,
 //} from "react-google-recaptcha-v3";
 
-import { JA, EN } from "../components/i18n";
-import contactBack from "../components/button/contactBack";
-import contactSend from "../components/button/contactSend";
+import { JA, EN } from "../components/utils/i18n";
+import contactBack from "../components/utils/button/contactBack";
+import contactSend from "../components/utils/button/contactSend";
 
-import bigLogo from "../components/logo";
+import bigLogo from "../components/utils/logo";
 
 export default function Contact() {
   const registerUser = async (event) => {

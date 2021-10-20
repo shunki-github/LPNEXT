@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import styles from "../../styles/Header.module.css";
+import styles from "../../../styles/home/Header.module.css";
 import Link from "next/link";
-import * as gtag from "../../src/gtag.js";
-import { JA, EN } from "../i18n";
-import naviNormal from "../button/naviNormal";
-import naviOrange from "../button/naviOrange";
+import * as gtag from "../../../src/gtag.js";
+import { JA, EN } from "../../utils/i18n"
+import naviNormal from "../../utils/button/naviNormal"
+import naviOrange from "../../utils/button/naviOrange"
 
-import bigLogo from "../logo";
+import bigLogo from "../../utils/logo";
 
-export class header extends Component {
+export class Header extends Component {
   constructor(props) {
     super(props);
     this.state = { time: 0 };
@@ -74,4 +74,4 @@ export class header extends Component {
   }
 }
 
-export default header;
+export default Header;

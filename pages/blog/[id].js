@@ -1,29 +1,29 @@
 /* eslint-disable */
 
 import Head from "next/head";
-import styles from "../../styles/BlogDetail.module.css";
+import styles from "../../styles/blog/BlogId.module.css";
 import { useRouter } from "next/router";
 import en from "../../public/static/locales/en/common.json";
 import ja from "../../public/static/locales/ja/common.json";
 import React, { useEffect } from "react";
 import tocbot from "tocbot";
-import Footer from "../../components/mainFooter";
+import Footer from "../../components/utils/commonFooter";
 
 import gqlBlogELm from "../../lib/graphQL/getBlogElm"
 import gqlBlogList from "../../lib/graphQL/getBlogList"
 
-import { JA, EN } from "../../components/i18n";
+import { JA, EN } from "../../components/utils/i18n";
 
-import rankingList from "../../components/blog/sub/rankingList";
-import relatedList from "../../components/blog/sub/relatedList";
-import relatedImageList from "../../components/blog/sub/relatedImageList";
+import rankingList from "../../components/core/sub/rankingList";
+import relatedList from "../../components/core/sub/relatedList";
+import relatedImageList from "../../components/core/sub/relatedImageList";
 
-import contentBody from "../../components/blog/elm/contentBody";
-import contentDesc from "../../components/blog/elm/contentDesc";
-import topImage from "../../components/blog/elm/topImage";
+import contentBody from "../../components/core/blog/elm/contentBody";
+import contentDesc from "../../components/core/blog/elm/contentDesc";
+import topImage from "../../components/core/blog/elm/topImage";
 
-import shareList from "../../components/share";
-import bigLogo from "../../components/logo";
+import shareList from "../../components/utils/share";
+import bigLogo from "../../components/utils/logo";
 
 //componentは頭文字が大文字で読み込む必要がある
 

@@ -6,7 +6,7 @@ export function JA(locale, asPath) {
   if (locale !== "ja") {
     return (
       <ChakraProvider>
-        <Link href={asPath} locale="ja">
+        <Link href={asPath} locale="ja" passHref={true}>
           <Box
             as="button"
             height="24px"
@@ -31,7 +31,7 @@ export function JA(locale, asPath) {
   } else {
     return (
       <ChakraProvider>
-        <Link href={asPath} locale="ja">
+        <Link href={asPath} locale="ja" passHref={true}>
           <Box
             as="button"
             height="24px"
@@ -64,7 +64,7 @@ export function EN(locale, asPath) {
   if (locale === "en") {
     return (
       <ChakraProvider>
-        <Link href={asPath} locale="en">
+        <Link href={asPath} locale="en" passHref={true}>
           <Box
             as="button"
             height="24px"
@@ -93,7 +93,7 @@ export function EN(locale, asPath) {
   } else {
     return (
       <ChakraProvider>
-        <Link href={asPath} locale="en">
+        <Link href={asPath} locale="en" passHref={true}>
           <Box
             as="button"
             height="24px"

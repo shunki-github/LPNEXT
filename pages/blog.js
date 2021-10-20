@@ -1,21 +1,21 @@
 /* eslint-disable */
 
 import Head from "next/head";
-import styles from "../styles/Blog.module.css";
+import styles from "../styles/blog/Blog.module.css";
 import { useRouter } from "next/router";
 import en from "../public/static/locales/en/common.json";
 import ja from "../public/static/locales/ja/common.json";
 import React, { useRef } from "react";
-import Footer from "../components/mainFooter";
+import Footer from "../components/utils/commonFooter";
 import gqlBlogList from "../lib/graphQL/getBlogList"
 
-import { JA, EN } from "../components/i18n";
+import { JA, EN } from "../components/utils/i18n";
 
-import topComponent from "../components/blog/List/topBlog";
-import rankingList from "../components/blog/sub/rankingList";
-import blogList from "../components/blog/List/blogList";
+import topComponent from "../components/core/blog/List/topBlog";
+import rankingList from "../components/core/sub/rankingList";
+import blogList from "../components/core/blog/List/blogList";
 
-import bigLogo from "../components/logo";
+import bigLogo from "../components/utils/logo";
 
 export default function Blog(staticData) {
   const { locale, asPath } = useRouter();

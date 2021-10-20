@@ -58,7 +58,7 @@
 */
 
 .top__title {
-    background-image: url(../public/blogTop.webp);
+    background-image: url(../../public/blogTop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -375,17 +375,17 @@
 }
 
 .side__title__category:before {
-    content: url(../public/category.svg);
+    content: url(../../public/category.svg);
     margin-right: 1px;
 }
 
 .side__title__popular:before {
-    content: url(../public/ranking.svg);
+    content: url(../../public/ranking.svg);
     margin-right: 1px;
 }
 
 .side__title__relation:before {
-    content: url(../public/related.svg);
+    content: url(../../public/related.svg);
     margin-right: 1px;
 }
 

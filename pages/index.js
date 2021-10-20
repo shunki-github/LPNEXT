@@ -1,8 +1,8 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Header from "../components/Top/header";
-import Body from "../components/Top/body";
-import Footer from "../components/mainFooter";
+import styles from "../styles/home/All.module.css";
+import Header from "../components/core/home/header.js";
+import Body from "../components/core/home/body";
+import Footer from "../components/utils/commonFooter"
 import { useRouter } from "next/router";
 import en from "../public/static/locales/en/common.json";
 import ja from "../public/static/locales/ja/common.json";

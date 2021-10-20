@@ -1,22 +1,25 @@
 .container {
-  width: 100%;
-  height: 800px;
-  background-image: url(../public/404.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
+    width: 100%;
+    height: 800px;
+    background-color: #f7f7f7;
+    /*
+    background-image: url(../public/404.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
 }
 
 .top {
-  background-color: #072572;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+    background-color: #0a1546;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .body {
-  padding: 200px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 900;
+    padding: 200px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
 }

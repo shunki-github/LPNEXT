@@ -81,7 +81,7 @@
 }
 
 .point__left {
-    background-image: url(../public/talk.webp);
+    background-image: url(../../public/talk.webp);
     background-size: cover;
     background-repeat: no-repeat;
     width: 49%;
