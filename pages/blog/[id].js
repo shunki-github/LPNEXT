@@ -142,7 +142,7 @@ export default function Blog(staticData) {
       <Head>
         <title>{headerTitle}</title>
         <meta name="description" content={`${headerDesc}`} />
-        <link rel="icon" href="/makaserulogo.webp" />
+        <link rel="icon" href="/makaseruICO.webp" />
       </Head>
       <main>
         <div className={styles.top}>

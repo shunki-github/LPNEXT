@@ -15,7 +15,7 @@ export default function relatedList(
   } else {
     return rawRelated.map((relate) => (
       <div key={relate.key}>
-        <Link href={relate.blogNumber.toString()}>
+        <Link href={relate.blogNumber.toString()} passHref={true}>
           <div className={styles.side__unit}>
             <p>{relate.title}</p>
           </div>

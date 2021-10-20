@@ -12,10 +12,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   */
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     position: relative;
-    margin: 0 0 0 5px;
+    margin: 10px 0 0 10px;
 }
 
 .big__name {
@@ -28,7 +28,7 @@
     width: 200px;
     height: 60px;
     position: relative;
-    margin: 3px 0 0 0;
+    margin: 3px 0 0 5px;
 }
 
 .midium {

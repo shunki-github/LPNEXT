@@ -71,7 +71,7 @@ export default function Contact() {
             name="description"
             content="MAKASERU への問い合わせフォームになります。"
           />
-          <link rel="icon" href="/makaserulogo.webp" />
+          <link rel="icon" href="/makaseruICO.webp" />
         </Head>
         <main>
           <div className={styles.top}>

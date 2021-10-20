@@ -20,7 +20,7 @@ export default function Home() {
           name="description"
           content="MAKASERU はビジネスに寄り添った形でモバイルアプリやWebアプリ、AIなどのシステム開発やその後のサポートをします。MAKASERUの魅力は技術選定とその後のサポートです。余計な予算を削ぎ落とし、マーケティング面までサポートします。"
         />
-        <link rel="icon" href="/makaserulogo.webp" />
+        <link rel="icon" href="/makaseruICO.webp" />
       </Head>
       <main className={styles.main}>
         <Header asPath={asPath} locale={locale} />

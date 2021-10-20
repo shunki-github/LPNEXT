@@ -104,7 +104,7 @@ export default function Blog(staticData) {
           name="description"
           content="MAKASERU Blog はビジネスマン向けのモバイルアプリやWebアプリ、AIなどのシステム開発やマーケティングに関連したコンテンツを配信しています。"
         />
-        <link rel="icon" href="/makaserulogo.webp" />
+        <link rel="icon" href="/makaseruICO.webp" />
       </Head>
       <main>
         <div className={styles.top}>
