@@ -4,8 +4,8 @@ import Header from "../components/core/home/header.js";
 import Body from "../components/core/home/body";
 import Footer from "../components/utils/commonFooter"
 import { useRouter } from "next/router";
-import en from "../public/static/locales/en/common.json";
-import ja from "../public/static/locales/ja/common.json";
+import en from "../public/locales/en/common.json";
+import ja from "../public/locales/ja/common.json";
 //componentは頭文字が大文字で読み込む必要がある
 
 export default function Home() {

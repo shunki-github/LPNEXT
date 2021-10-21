@@ -9,8 +9,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import en from "../public/static/locales/en/common.json";
-import ja from "../public/static/locales/ja/common.json";
+import en from "../public/locales/en/common.json";
+import ja from "../public/locales/ja/common.json";
 import * as gtag from "../src/gtag.js";
 import React, { useState } from "react";
 //import {
