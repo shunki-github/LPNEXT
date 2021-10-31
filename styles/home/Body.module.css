@@ -81,9 +81,11 @@
 }
 
 .point__left {
+    /*
     background-image: url(../../public/talk.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    */
     width: 49%;
     margin-left: 6%;
 }
@@ -213,7 +215,8 @@
     background: linear-gradient(to bottom right, #999999, #999999);
 }
 
-@media screen and (max-width: 640px) {
+/*@media screen and (max-width: 640px) {*/
+@media screen and (max-width: 950px) {
     .point {
         /*height: 250px;*/
         flex-direction: column;
@@ -221,7 +224,7 @@
     }
 
     .point__left {
-        visibility: hidden;
+        display: none;
     }
 
     .point__right {

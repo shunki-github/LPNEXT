@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { RichText } from "@graphcms/rich-text-react-renderer";
 
 export default function contentBody(styles, blog, descContents) {
@@ -16,6 +17,7 @@ export default function contentBody(styles, blog, descContents) {
           h6: ({ children }) => <h6 className={styles.body__h6}>{children}</h6>,
           p: ({ children }) => <p className={styles.body__p}>{children}</p>,
           bold: ({ children }) => <strong>{children}</strong>,
+          code: ({}) => <br/>
         }}
       />
     );

@@ -19,10 +19,14 @@ const securityHeaders = [
     key: 'X-Content-Type-Options',
     value: 'nosniff'
   },
-  //{
-  //  key: 'Content-Security-Policy',
-  //  value: 'self'
-  //}
+  {
+    key: 'Content-Security-Policy',
+    value: `
+    object-src 'none';
+    script-src 'nonce-{random}' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;
+    base-uri 'none';
+    `
+  }
 ]
 
 module.exports = {

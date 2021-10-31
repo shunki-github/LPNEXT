@@ -66,13 +66,15 @@ export default function Blog(staticData) {
     tocbot.init({
       tocSelector: ".toc",
       contentSelector: ".content__main__body",
-      headingSelector: "h2, h6",
+      headingSelector: "h2",
+      //h3を追加してcontentBody内のstyleを編集すれば子要素も目次に含めることができる
       listItemClass: "toc__list__item",
 
       scrollSmooth: true,
       scrollSmoothDuration: 420,
       orderedList: false,
       includeTitleTags: true,
+      hasInnerContainers: false,
     });
     return () => tocbot.destroy();
   }, [blog]);
@@ -117,8 +119,8 @@ export default function Blog(staticData) {
     let createeDate = blog.createdAt.split("T")[0];
     createdAt = (
       <>
-        <p className={styles.blog__grey}>{createeDate}</p>
         <p className={styles.blog__lightgrey}>・</p>
+        <p className={styles.blog__grey}>{createeDate}</p>
       </>
     );
   }

@@ -111,6 +111,16 @@
     margin-right: 5%;
 }
 
+.bottomBox {
+    display: block;
+
+    /*
+    transition: opacity 800ms cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 800ms cubic-bezier(0.165, 0.84, 0.44, 1.05);
+    transition-delay: 1000ms;
+    */
+}
+
 .bottomBox__EN {
     color: white;
     font-size: 36px;

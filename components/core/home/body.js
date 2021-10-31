@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "../../../styles/home/Body.module.css";
+import Image from "next/image"
 
 export class body extends Component {
   render() {
@@ -45,7 +46,18 @@ export class body extends Component {
         </div>
 
         <div className={styles.point}>
-          <div className={styles.point__left} />
+          <div className={styles.point__left} >
+            <Image
+            src="/../public/talk.webp"
+            className={styles.point__left__image}
+            alt="MAKASERU Who We Are"
+            layout="responsive"
+            objectPosition="50% 50%"
+            width="400px"
+            height="280px"
+            loading="lazy"
+            />
+          </div>
           <div className={styles.point__right}>
             <h1>Who we are</h1>
             <h2>{t.point.subTitle}</h2>

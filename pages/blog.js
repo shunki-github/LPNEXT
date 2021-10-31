@@ -22,6 +22,7 @@ export default function Blog(staticData) {
   let t = locale === "ja" ? ja : en;
 
   const renderFlgRef = useRef(false)
+
   //const [rawdata, setRaw] = useState([]);
 
   //When I don't use staticData, use this.
@@ -83,6 +84,7 @@ export default function Blog(staticData) {
   //}
 
   const blogs = [];
+
   for (let key in rawBlogs) {
     if (key === "0") {
       var topBlog = rawBlogs[key];
@@ -119,7 +121,7 @@ export default function Blog(staticData) {
           <div className={styles.blog}>
             {topComponent(styles, topBlog)}
             <div className={styles.blog__list}>
-              {blogList(styles, blogs, t.sub.preparationText)}
+              {blogList(topBlog, styles, blogs, t.sub.preparationText)}
             </div>
             <div className={styles.none} />
           </div>

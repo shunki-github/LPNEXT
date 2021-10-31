@@ -176,15 +176,24 @@
     /*background-color: darkmagenta;*/
     padding: 50px 0 40px 0;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 27.2px;
-    color: rgb(33, 35, 38);
+    letter-spacing: 0.2px;
+    color: black;
+}
+
+.content__main__description a {
+    text-decoration: underline;
 }
 
 .content__main__body {
     /*background-color: darkorange;*/
-    padding: 0;
-    color: rgb(33, 35, 38);
+    padding-top: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    letter-spacing: 0.2px;
+    color: black;
     margin-bottom: 60px;
 }
 
@@ -245,6 +254,10 @@
 
 .content__main__body strong {
     font-weight: 700;
+}
+
+.content__main__body a {
+    text-decoration: underline;
 }
 
 /*
@@ -411,10 +424,26 @@
     display: none;
 }
 
+.tocArea {
+    background-color: #f0f1f2;
+    padding: 50px;
+}
+
+.tocArea h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.tocArea li {
+    margin-bottom: 10px;
+}
+
+/*
 .toc {
     background-color: #f0f1f2;
     padding: 30px 50px;
 }
+*/
 
 .toc ul {
     list-style: none;
@@ -422,6 +451,18 @@
 
 .topImageBox {
     width: 100%;
+}
+
+.content__main h2 {
+    font-size: 33px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.content__main h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 0px;
 }
 
 @media screen and (min-width: 1115px) {
@@ -434,5 +475,17 @@
 
     .footer {
         display: none;
+    }
+
+    .content__main__description {
+        padding: 50px 50px 40px 50px;
+    }
+
+    .content__main__toc {
+        padding: 0 50px 0 50px;
+    }
+
+    .content__main__body {
+        padding: 50px 0 40px 0;
     }
 }

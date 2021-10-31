@@ -64,10 +64,11 @@ export class Header extends Component {
           </div>
         </div>
         <div className={styles.bottomBox}>
-          <p className={styles.bottomBox__EN}>
+            <p className={styles.bottomBox__EN}>
             Select the right technology for your business
-          </p>
-          <p className={styles.bottomBox__JA}>ビジネスに向き合った技術選定</p>
+            </p>
+            <p className={styles.bottomBox__JA}>ビジネスに向き合った技術選定</p>
+
         </div>
       </div>
     );
@@ -75,3 +76,10 @@ export class Header extends Component {
 }
 
 export default Header;
+
+//<p className={styles.bottomBox__EN}>
+//Select the right technology for your business
+//</p>
+//<p className={styles.bottomBox__JA}>ビジネスに向き合った技術選定</p>
+
+//<TopText/>

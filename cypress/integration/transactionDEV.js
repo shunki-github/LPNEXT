@@ -1,3 +1,4 @@
+/* eslint-disable */
 describe('TransactionTest', () => {
   it('Visits the Top', () => {
     cy.visit('http://localhost:3000/')
@@ -7,5 +8,8 @@ describe('TransactionTest', () => {
   }),
   it('Visits the contact', () => {
     cy.visit('http://localhost:3000/contact')
+  }),
+  it('Visits the none', () => {
+    cy.visit('http://localhost:3000/blolog/')
   })
 })

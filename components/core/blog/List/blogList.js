@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from 'next/image'
 
-export default function categoryList(styles, blogs, preparationText) {
-  if (blogs.length === 0) {
+export default function categoryList(topBlog, styles, blogs, preparationText) {
+  if (topBlog === undefined) {
     return (
       <div className={styles.main__preparation}>
         <p>{preparationText}</p>
