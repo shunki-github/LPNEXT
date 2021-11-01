@@ -121,6 +121,11 @@
     */
 }
 
+.bottomBox:hover {
+    transform: translateY(-4px);
+    transition-duration: 700ms;
+}
+
 .bottomBox__EN {
     color: white;
     font-size: 36px;

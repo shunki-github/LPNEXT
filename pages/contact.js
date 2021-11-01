@@ -41,10 +41,19 @@ export default function Contact() {
       method: "POST",
     });
 
-    await res.json();
-    //const result = await res.json();
-    //console.log(result)
+    //await res.json();
+    const result = await res.json();
+    afterSend(result)
   };
+
+  const afterSend = (result) => {
+    if(result === "200"){
+        alert("送信が成功しました")
+        router.back()
+    } else {
+        alert("送信が失敗しました")
+    }
+  }
 
   const router = useRouter();
   const { locale, asPath } = useRouter();
@@ -116,7 +125,8 @@ export default function Contact() {
               <div
                 className={styles.service__form__submit}
                 onClick={() => {
-                  router.back(), handler;
+                    //これで動作してた
+                    router.back(), handler;
                 }}
               >
                 {contactSend(t.contact.submit)}
