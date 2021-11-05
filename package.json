@@ -1,0 +1,37 @@
+{
+  "name": "lp-makaseru",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'",
+    "cypress": "cypress open"
+  },
+  "dependencies": {
+    "next": "11.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "1.6.6",
+    "@emotion/react": "11.4.1",
+    "@emotion/styled": "11.3.0",
+    "@graphcms/rich-text-react-renderer": "0.3.0",
+    "@sendgrid/mail": "7.4.6",
+    "cypress": "^8.5.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "framer-motion": "4.1.17",
+    "graphql-request": "3.5.0",
+    "prettier": "2.4.0",
+    "react-google-recaptcha-v3": "1.9.5",
+    "react-icons": "4.2.0",
+    "react-share": "4.4.0",
+    "tocbot": "4.13.4"
+  }
+}
