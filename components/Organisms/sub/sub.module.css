@@ -1,0 +1,32 @@
+.side-unit {
+    padding: 14px 0;
+    border-bottom: 0.01px solid;
+    border-color: #d2d5d9;
+}
+
+.card-image {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.card-image Image {
+    object-fit: cover;
+}
+
+.card-image__text-box {
+    padding: 0 10px;
+}
+
+.card-image__text-box p {
+    font-size: 10px;
+    color: grey;
+    font-weight: 400;
+}
+
+.card-image__text-box h4 {
+    font-size: 13px;
+    color: black;
+    font-weight: 400;
+}

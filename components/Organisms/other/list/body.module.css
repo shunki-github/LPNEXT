@@ -1,0 +1,56 @@
+.body {
+    padding-top: 30px;
+}
+
+.blog__list {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.preparation--big {
+    font-size: 25px;
+    font-weight: 800;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.side {
+    display: none;
+}
+
+.side__box {
+    padding: 10px 30px 10px 0;
+}
+.side__title {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 16px;
+    color: #212326;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 1115px) {
+    .body {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .side {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .blog {
+        width: 70%;
+        margin-right: auto;
+    }
+}

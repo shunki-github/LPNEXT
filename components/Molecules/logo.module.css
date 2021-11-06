@@ -1,0 +1,31 @@
+.big {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.big__icon {
+    display: block;
+    position: relative;
+    padding: 10px 0 0 10px;
+}
+
+.big__name {
+    display: block;
+    position: relative;
+    padding: 3px 0 0 5px;
+}
+
+/*
+.midium {
+    position: relative;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.midium__name {
+    padding-top: 2px;
+}
+*/
