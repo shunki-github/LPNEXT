@@ -1,0 +1,60 @@
+.container {
+    background-image: url(../../../public/headerTest2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.top__right__Language {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-top: 16px;
+}
+
+.top__right__Language div {
+    display: block;
+    padding-right: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.nav div {
+    display: block;
+    padding-right: 10px;
+}
+
+.bottomBox {
+    padding: 50px 0 100px 0;
+}
+
+.bottomBox__EN {
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+    padding-left: 3%;
+}
+
+.bottomBox__JA {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    padding-left: 2.2%;
+}

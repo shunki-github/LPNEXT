@@ -65,17 +65,6 @@
     margin-bottom: 20px;
 }
 
-/*
-.service__form {
-    background-color: aqua;
-}
-*/
-
-.service__form__submit {
-    margin-top: 20px;
-    text-align: right;
-}
-
 @media screen and (max-width: 720px) {
     .service__title {
         margin-bottom: 50px;
