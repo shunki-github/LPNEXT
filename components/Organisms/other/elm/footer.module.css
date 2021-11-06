@@ -1,5 +1,5 @@
 .footer__add {
-    padding: 0 50px;
+    padding: 0 100px 50px 100px;
 }
 
 .share {
@@ -32,10 +32,4 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-}
-
-@media screen and (min-width: 1115px) {
-    .footer__add {
-        display: none;
-    }
 }

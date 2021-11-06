@@ -4,9 +4,6 @@ import styles from "./contentbody.module.css"
 
 export default function contentBody(blog, bodyContents) {
 
-  if (blog === undefined) {
-    return <p />;
-  } else {
     return (
       <>
         {blog.tocVisible ? (
@@ -74,5 +71,4 @@ export default function contentBody(blog, bodyContents) {
         </div>
       </>
     );
-  }
 }

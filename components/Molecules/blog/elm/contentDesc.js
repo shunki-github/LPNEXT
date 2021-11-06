@@ -2,10 +2,7 @@
 import { RichText } from "@graphcms/rich-text-react-renderer";
 import styles from "./contentdesc.module.css"
 
-export default function contentBody(blog, descContents) {
-  if (blog === undefined) {
-    return <div />;
-  } else {
+export default function contentBody(descContents) {
     return (
         <div className={styles.desc}>
       <RichText
@@ -24,5 +21,4 @@ export default function contentBody(blog, descContents) {
       />
       </div>
     );
-  }
 }

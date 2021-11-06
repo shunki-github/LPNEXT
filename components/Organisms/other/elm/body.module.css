@@ -18,7 +18,7 @@
 
 .content {
     border-bottom: 0.1px lightgray;
-    padding: 30px 60px;
+    padding: 30px 100px 0 100px;
 }
 
 .content__head {
@@ -51,6 +51,11 @@
 }
 
 .content__head__left__top {
+    display: flex;
+    flex-direction: row;
+}
+
+.content__head__left__top div {
     display: flex;
     flex-direction: row;
 }
@@ -122,5 +127,26 @@
 
     .content__main__body {
         padding: 0 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content__head__desc {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content__head__left__top {
+        flex-direction: column;
+    }
+
+    .content__head__desc__left,
+    .content__head__desc__right {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .hide {
+        display: none;
     }
 }

@@ -46,7 +46,7 @@ export class Body extends Component {
               </div>
               <div>
                   { (rawRanking.length === 0) ? <div>{t.sub.preparationText}</div> :
-                  (rankList(rawRanking))}
+                  (rankList(rawRanking, "blog/"))}
               </div>
             </div>
         </div>

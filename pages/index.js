@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import TempHome from "../components/Templates/home"
-//componentは頭文字が大文字で読み込む必要がある
 
 export default function Home() {
     const { locale, asPath } = useRouter();
