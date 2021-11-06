@@ -43,69 +43,73 @@ export class Body extends Component {
     }
 
     return (
-        <>
-        <div className={styles["blog-header"]}>
-        <h1>MAKASERU&nbsp;Blog</h1>
-      </div>
-      <div className={styles.rowcontent}>
-        <div className={styles.content}>
-          <div className={styles.content__head}>
-            <div className={styles.content__head__title}><h1>{blog.title}</h1></div>
-            <div className={styles.content__head__desc}>
-              <div className={styles.content__head__desc__left}>
-                <div className={styles.content__head__left__top}>
-                    <p className={"grey"}>by&nbsp;</p>
-                    <p className={"brand--light"}>{blog.author.authorName}</p>
-                    <p className={"lightgrey"}>・</p>
-                    <p className={"brand--light"}><p className={styles.blog__blandColor}>{blog.category.categoryName}</p></p>
-                    <p className={"lightgrey"}>・</p>
-                    <p className={"grey"}>{createeDate}</p>
+            <>
+            <div className={styles["blog-header"]}>
+            <h1>Blog</h1>
+        </div>
+        <div className={styles.rowcontent}>
+            <div className={styles.content}>
+                <div className={styles.content__head}>
+                    <div className={styles.content__head__title}><h1>{blog.title}</h1></div>
+                    <div className={styles.content__head__desc}>
+                    <div className={styles.content__head__desc__left}>
+                        <div className={styles.content__head__left__top}>
+                            <div>
+                                <p className={"grey"}>by&nbsp;</p>
+                                <p className={"brand--light"}>{blog.author.authorName}</p>
+                                <p className={"lightgrey"}>・</p>
+                                <p className={"brand--light"}><p className={styles.blog__blandColor}>{blog.category.categoryName}</p></p>
+                                <p className={`lightgrey ${styles.hide}`}>・</p>
+                            </div>
+                            <div>
+                                <p className={"grey"}>{createeDate}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.content__head__desc__right}>
+                        {shareList(blog, asPath)}
+                    </div>
+                    </div>
                 </div>
-              </div>
-              <div className={styles.content__head__desc__right}>
-                {shareList(blog, asPath)}
-              </div>
+                <div>
+                    <div>
+                    {topImage(blog)}
+                    </div>
+                    <div className={styles.content__body__desc}>
+                        { (blog === undefined) ? <div/> : (contentDesc(descContents))}
+                    </div>
+                    <div className={styles.content__main__toc}>
+                        { (blog === undefined) ? <div/> : (contentBody(blog, bodyContents))}
+                    </div>
+                </div>
             </div>
-          </div>
-          <div>
-            <div>
-              {topImage(blog)}
-            </div>
-            <div className={styles.content__body__desc}>
-              {contentDesc(blog, descContents)}
-            </div>
-            <div className={styles.content__main__toc}>
-              {contentBody(blog, bodyContents)}
-            </div>
-          </div>
-        </div>
 
-        <div className={styles.side}>
-            <div className={styles.side__box}>
-            <div className={styles.side__title}>
-                <p className={styles.side__title__name}>
-                    {subText.popularTitle}
-                </p>
-            </div>
-            <div className={styles.side__list}>
-                {(rankBlogs.length === 0) ? <div>{subText.preparationText}</div> :
-                (rankList(rawRanking))}
-            </div>
-            </div>
-            <div className={styles.side__box}>
-            <div className={styles.side__title}>
-                <p className={styles.side__title__name}>
-                {subText.relationTitle}
-                </p>
-            </div>
-            <div className={styles.side__list}>
-                {(relateBlogs.length === 0) ? <div>{subText.preparationText}</div> :
-                    (relateList(rawRelated))}
-            </div>
+            <div className={styles.side}>
+                <div className={styles.side__box}>
+                <div className={styles.side__title}>
+                    <p className={styles.side__title__name}>
+                        {subText.popularTitle}
+                    </p>
+                </div>
+                <div className={styles.side__list}>
+                    {(rankBlogs.length === 0) ? <div>{subText.preparationText}</div> :
+                    (rankList(rawRanking))}
+                </div>
+                </div>
+                <div className={styles.side__box}>
+                <div className={styles.side__title}>
+                    <p className={styles.side__title__name}>
+                    {subText.relationTitle}
+                    </p>
+                </div>
+                <div className={styles.side__list}>
+                    {(relateBlogs.length === 0) ? <div>{subText.preparationText}</div> :
+                        (relateList(rawRelated))}
+                </div>
+                </div>
             </div>
         </div>
-      </div>
-      </>
+        </>
     );
   }
 }

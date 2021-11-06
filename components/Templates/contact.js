@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../../styles/Contact.module.css";
+import styles from "./contact.module.css";
 
 import Header from "../Organisms/other/header"
 import OutBlue from "../Atoms/button/OutBlue";
@@ -27,8 +27,8 @@ export default function TempContact(asPath, locale, router, sendfunc ) {
               <div className={styles.back} onClick={() => router.back()}>
                 {OutBlue(t.contact.back)}
               </div>
-              <div className={styles.service}>
-                <div className={styles.service__title}>
+              <div className={styles.body}>
+                <div className={styles.body__title}>
                   <p>{t.contact.contact}</p>
                 </div>
                 {form(sendfunc, t.contact)}

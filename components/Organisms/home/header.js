@@ -53,16 +53,12 @@ export class Header extends Component {
                 <div>
                     <a href="#project">{OutWhite("Project")}</a>
                 </div>
-                <div>
-                    <Link href="/blog" passHref={true}>
+                <Link href="/blog" passHref={true}>
                         <div>{OutWhite("Blog")}</div>
-                    </Link>
-                </div>
-                <div onClick={handler}>
-                    <Link href="/contact" passHref={true}>
-                    <div>{OutOrange("Contact")}</div>
-                    </Link>
-                </div>
+                </Link>
+                <Link href="/contact" passHref={true}>
+                    <div onClick={handler}>{OutOrange("Contact")}</div>
+                </Link>
             </div>
         </div>
         <div className={styles.bottomBox}>

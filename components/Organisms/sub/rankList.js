@@ -1,11 +1,14 @@
+import Link from "next/link";
 import styles from "./sub.module.css"
 
 export default function rankingList(
-  rawRanking
+  rawRanking, from=""
 ) {
     return rawRanking.map((rank) => (
       <div key={rank.key} className={styles["side-unit"]}>
-        <p>{rank.blog.title}</p>
+        <Link href={from + rank.blog.blogNumber.toString()} passHref={true}>
+            <p>{rank.blog.title}</p>
+        </Link>
       </div>
     ));
 }

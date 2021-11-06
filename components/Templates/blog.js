@@ -1,7 +1,4 @@
-/* eslint-disable */
-
 import Head from "next/head";
-import styles from "../../styles/blog/Blog.module.css";
 
 import React, {useRef} from "react";
 import Header from "../Organisms/other/header"
@@ -24,7 +21,7 @@ export default function TempBlog(asPath, locale, staticData) {
           <title>MAKASERU</title>
           <meta
             name="description"
-            content="MAKASERU Blog はビジネスマン向けのモバイルアプリやWebアプリ、AIなどのシステム開発やマーケティングに関連したコンテンツを配信しています。"
+            content="「MAKASERU Blog」は経営者、事業主等意思決定者向けに、モバイルアプリやWebアプリ、AIなどのシステム開発やマーケティングに関連したコンテンツを配信しています。"
           />
           <link rel="icon" href="/makaseruICO.webp" />
         </Head>

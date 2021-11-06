@@ -3,11 +3,11 @@ import Image from 'next/image'
 import styles from "./sub.module.css"
 
 export default function relatedList(
-  rawRelated
+  rawRelated, from=""
 ) {
     return rawRelated.map((relate) => (
       <div key={relate.key} className={styles["card-image"]}>
-        <Link href={relate.blogNumber.toString()} passHref={true}>
+        <Link href={from + relate.blogNumber.toString()} passHref={true}>
           <div>
             <Image
               src={relate.ogpImage.url}
