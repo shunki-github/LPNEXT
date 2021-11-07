@@ -13,6 +13,6 @@ describe('form test', () => {
       cy.get("#tel").type("00000000")
     }),
     it('send', () => {
-        cy.get("form").send()
+        cy.get("form").submit()
       })
   })
