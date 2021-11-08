@@ -16,6 +16,24 @@
     padding: 3px 0 0 5px;
 }
 
+.midium {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.midium__icon {
+    display: block;
+    position: relative;
+    padding: 10px 0 0 10px;
+}
+
+.midium__name {
+    display: block;
+    position: relative;
+    padding: 3px 0 0 5px;
+}
+
 /*
 .midium {
     position: relative;

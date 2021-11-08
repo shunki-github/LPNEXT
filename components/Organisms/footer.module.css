@@ -38,3 +38,9 @@
         width: 80%;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .bottom__button {
+        font-size: 20px;
+    }
+}

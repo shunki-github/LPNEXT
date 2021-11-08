@@ -15,19 +15,19 @@
 
 .top__right {
     display: flex;
-    flex-direction: column;
-}
-
-.top__right__Language {
-    display: flex;
     flex-direction: row;
     justify-content: right;
-    padding-top: 16px;
+    padding-top: 20px;
 }
 
-.top__right__Language div {
+.top__right div {
     display: block;
     padding-right: 10px;
+}
+
+.top__right--burger {
+    display: none;
+    cursor: pointer;
 }
 
 .nav {
@@ -50,6 +50,12 @@
     font-size: 36px;
     font-weight: 500;
     padding-left: 3%;
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    -moz-transition: opacity 1.5s, transform 1.5s;
+    -webkit-transition: opacity 1.5s, transform 1.5s;
+    -o-transition: opacity 1.5s, transform 1.5s;
+    transition: opacity 1.5s, transform 1.5s;
 }
 
 .bottomBox__JA {
@@ -57,4 +63,65 @@
     font-size: 48px;
     font-weight: 700;
     padding-left: 2.2%;
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    -moz-transition: opacity 1.5s 0.4s, transform 1.5s 0.4s;
+    -webkit-transition: opacity 1.5s 0.4s, transform 1.5s 0.4s;
+    -o-transition: opacity 1.5s 0.4s, transform 1.5s 0.4s;
+    transition: opacity 1.5s 0.4s, transform 1.5s 0.4s;
+}
+
+.loaded {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.burgerMenu {
+    position: absolute;
+    top: -200px;
+    opacity: 0;
+    background-color: white;
+    padding: 20px 150px;
+    width: 100%;
+    transform: translateY(0);
+    -moz-transition: opacity 1s 0s, transform 1s 0s;
+    -webkit-transition: opacity 1s 0s, transform 1s 0s;
+    -o-transition: opacity 1s 0s, transform 1s 0s;
+    transition: opacity 1s 0s, transform 1s 0s;
+    z-index: 1;
+}
+
+.burgerMenu--active {
+    opacity: 1;
+    transform: translateY(200px);
+    -moz-transition: opacity 1.5s 0s, transform 1.5s 0s;
+    -webkit-transition: opacity 1.5s 0s, transform 1.5s 0s;
+    -o-transition: opacity 1.5s 0s, transform 1.5s 0s;
+    transition: opacity 1.5s 0s, transform 1.5s 0s;
+}
+
+.burgerMenu__item {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: grey 1px solid;
+    cursor: pointer;
+}
+
+.burgerMenu__item--close {
+    border-bottom: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+}
+
+@media screen and (max-width: 750px) {
+    .top__right--burger {
+        display: block;
+    }
+
+    .middle {
+        display: none;
+    }
 }

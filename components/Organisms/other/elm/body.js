@@ -9,6 +9,7 @@ import contentDesc from "../../../Molecules/blog/elm/contentDesc"
 import topImage from "../../../Molecules/blog/elm/topImage"
 
 import shareList from "../../../Molecules/share"
+import Link from "next/link"
 
 export class Body extends Component {
   render() {
@@ -45,7 +46,9 @@ export class Body extends Component {
     return (
             <>
             <div className={styles["blog-header"]}>
-            <h1>Blog</h1>
+                <Link href="/blog" passHref={true}>
+                    <h1>MAKASERUブログ</h1>
+                </Link>
         </div>
         <div className={styles.rowcontent}>
             <div className={styles.content}>

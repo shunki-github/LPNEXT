@@ -45,6 +45,35 @@ export default function TempBlogDetail(asPath, locale, staticData) {
           <title>{headerTitle}</title>
           <meta name="description" content={`${headerDesc}`} />
           <link rel="icon" href="/makaseruICO.webp" />
+          <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: `
+                        {
+                        "@context": "http://schema.org",
+                        "@type": "BlogPosting",
+                        "name": "MAKASERU",
+                        "image": "${blog.ogpImage.url}"
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://dev.oovo.app/"
+                        },
+                        "headline": "${headerTitle}",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Shunki"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "MAKASERU Blog",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "${process.env.NEXT_PUBLIC_LOGO_ICON_PATH}"
+                            }
+                        },
+                        "description": "${headerDesc}",
+                        }`
+                    }}
+                    />
         </Head>
         <main>
           {Header(locale, asPath)}
