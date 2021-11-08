@@ -209,23 +209,20 @@
     .service__list {
         display: block;
         overflow-x: auto;
+
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
     }
 
     .service__list li {
         display: inline-block;
-        padding: 0 10%;
     }
 
     .service__item__textbox {
         display: block;
         overflow: hidden;
         white-space: normal;
-    }
-
-    .service__list p {
-        height: 100px;
+        height: 300px;
     }
 
     .project__list {
@@ -244,14 +241,10 @@
         display: block;
         overflow: hidden;
         white-space: normal;
-    }
-
-    .project__list h3 {
-        height: 30px;
+        height: 300px;
     }
 
     .project__list h4 {
         padding-top: 130px;
-        height: 80px;
     }
 }

@@ -24,10 +24,21 @@ export class Header extends Component {
         let title__en = document.getElementById('title-en')
         let title__ja = document.getElementById('title-ja')
 
+        if(window.onload !== null){
+            window.location.reload()
+        }
+
         window.onload = function() {
             title__en.className += ` ${styles.loaded}`
             title__ja.className += ` ${styles.loaded}`
         }
+  }
+
+  showTitle(){
+    let title__en = document.getElementById('title-en')
+    let title__ja = document.getElementById('title-ja')
+    title__en.className += ` ${styles.loaded}`
+    title__ja.className += ` ${styles.loaded}`
   }
 
   openMenu(){

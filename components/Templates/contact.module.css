@@ -2,6 +2,10 @@
     padding: 0% 20%;
 }
 
+.back {
+    padding: 20px;
+}
+
 .body__title {
     font-size: 25px;
     text-align: center;
