@@ -52,7 +52,7 @@ export class body extends Component {
             <div className={styles.point} id="point">
                 <div className={styles.point__image} >
                     <Image
-                    src="/../public/talk.webp"
+                    src={process.env.NEXT_PUBLIC_TALK_PATH}
                     alt="MAKASERU Who We Are"
                     layout="responsive"
                     objectPosition="50% 50%"
