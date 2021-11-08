@@ -11,6 +11,11 @@
     padding: 50px;
 }
 
+.blog-header h1 {
+    text-decoration: underline 2px solid;
+    cursor: pointer;
+}
+
 .rowcontent {
     display: flex;
     flex-direction: row;
