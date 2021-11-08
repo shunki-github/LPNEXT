@@ -22,7 +22,7 @@
 
 .top__right div {
     display: block;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .top__right--burger {
@@ -51,7 +51,7 @@
     font-weight: 500;
     padding-left: 3%;
     opacity: 0;
-    transform: translate3d(0, 50px, 0);
+    transform: translateY(50px);
     -moz-transition: opacity 1.5s, transform 1.5s;
     -webkit-transition: opacity 1.5s, transform 1.5s;
     -o-transition: opacity 1.5s, transform 1.5s;
@@ -64,7 +64,7 @@
     font-weight: 700;
     padding-left: 2.2%;
     opacity: 0;
-    transform: translate3d(0, 50px, 0);
+    transform: translateY(50px);
     -moz-transition: opacity 1.5s 0.4s, transform 1.5s 0.4s;
     -webkit-transition: opacity 1.5s 0.4s, transform 1.5s 0.4s;
     -o-transition: opacity 1.5s 0.4s, transform 1.5s 0.4s;
@@ -73,7 +73,7 @@
 
 .loaded {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: translateY(0);
 }
 
 .burgerMenu {
@@ -123,5 +123,11 @@
 
     .middle {
         display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .burgerMenu {
+        padding: 20px 50px;
     }
 }
