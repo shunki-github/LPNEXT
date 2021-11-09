@@ -1,15 +1,15 @@
 /* eslint-disable */
 
 import { useRouter } from "next/router";
-import * as gtag from "../src/gtag.js";
+import * as gtag from "../src/Gtag.js";
 import React, { useState } from "react";
 
-import TempContact from "../components/Templates/contact"
+import TempContact from "../components/Templates/TempContact";
 
 export default function Contact() {
   const registerUser = async (event) => {
     event.preventDefault();
-    const res = await fetch("/api/send", {
+    const res = await fetch("/api/Send", {
       body: JSON.stringify({
         email: event.target.email.value,
         message: event.target.message.value,
@@ -23,24 +23,24 @@ export default function Contact() {
     });
     //await res.json();
     const result = await res.json();
-    afterSend(result)
+    afterSend(result);
   };
 
   const testsend = async (event) => {
     event.preventDefault();
-    afterSend("200")
-  }
+    afterSend("200");
+  };
 
   const afterSend = (result) => {
-    if(result === "200"){
-        alert("送信が成功しました")
-        //add
-        handler();
-        router.back();
+    if (result === "200") {
+      alert("送信が成功しました");
+      //add
+      handler();
+      router.back();
     } else {
-        alert("送信が失敗しました")
+      alert("送信が失敗しました");
     }
-  }
+  };
 
   const router = useRouter();
   const { locale, asPath } = useRouter();
@@ -57,9 +57,5 @@ export default function Contact() {
     });
   };
 
-  return (
-      <>
-      {TempContact(asPath, locale, router, testsend)}
-      </>
-  );
+  return <>{TempContact(asPath, locale, router, testsend)}</>;
 }

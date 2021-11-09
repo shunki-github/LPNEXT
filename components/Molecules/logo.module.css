@@ -1,34 +1,36 @@
+/*big logo*/
+
 .big {
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
-    padding-right: 30px;
-}
-
-.big__icon {
-    display: block;
-    position: relative;
-    padding: 10px 0 0 10px;
-}
-
-.big__name {
-    display: block;
-    position: relative;
-    padding: 3px 0 0 5px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding-right: 30px;
 }
 
 .big img {
-    object-fit: contain;
+  object-fit: contain;
+}
+
+.big__icon {
+  display: block;
+  position: relative;
+  padding: 10px 0 0 10px;
 }
 
 .big__icon img {
-    width: 45px;
-    height: 45px;
+  width: 45px;
+  height: 45px;
+}
+
+.big__name {
+  display: block;
+  position: relative;
+  padding: 3px 0 0 5px;
 }
 
 .big__name img {
-    width: 200px;
-    height: 60px;
+  width: 200px;
+  height: 60px;
 }
 
 /*

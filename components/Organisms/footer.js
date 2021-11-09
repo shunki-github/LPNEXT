@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import styles from "./footer.module.css";
-import * as gtag from "../../src/gtag"
+import styles from "./Footer.module.css";
+import * as gtag from "../../src/Gtag";
 
-import bigLogo from "../Molecules/logo";
+import BigLogo from "../Molecules/Logo";
 
 export class footer extends Component {
   constructor(props) {
@@ -32,19 +32,19 @@ export class footer extends Component {
 
     return (
       <div className={styles.container}>
-        {bigLogo()}
+        {BigLogo()}
         <div className={styles.bottom}>
           <div className={styles.botto__row}>
             <p className={styles.bottom__button}>
-                <a href={this.state.project}>Project →</a>
+              <a href={this.state.project}>Project →</a>
             </p>
             <p className={styles.bottom__button} onClick={handler}>
-                <a href={this.state.contact}>Contact →</a>
+              <a href={this.state.contact}>Contact →</a>
             </p>
           </div>
           <div className={styles.botto__row}>
             <p className={styles.bottom__button}>
-                <a href={this.state.service}>Service →</a>
+              <a href={this.state.service}>Service →</a>
             </p>
             <p className={styles.bottom__button}>
               <a href={this.state.blog}>Blog →</a>

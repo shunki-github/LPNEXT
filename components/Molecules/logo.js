@@ -1,25 +1,23 @@
 /* eslint-disable */
-
 //import Image from "next/image"
-import Link from "next/link"
-import styles from "./logo.module.css"
 
-export default function bigLogo() {
+import Link from "next/link";
+import styles from "./Logo.module.css";
 
+export default function BigLogo() {
   return (
     <Link
-    href={{
-      pathname: `/`
-    }}
-    passHref={true}
+      href={{
+        pathname: `/`,
+      }}
+      passHref={true}
     >
       <div className={styles.big}>
         <div className={styles.big__icon}>
-            <img src="./makaseruICON.webp" alt="Makaseru アイコン"/>
-
+          <img src={`${process.env.NEXT_PUBLIC_BASE_LINK}/MakaseruICON.webp`} alt="Makaseru アイコン" />
         </div>
         <div className={styles.big__name}>
-          <img src="./makaseruNAME.webp" alt="Makaseru ネーム"/>
+          <img src={`${process.env.NEXT_PUBLIC_BASE_LINK}/MakaseruNAME.webp`} alt="Makaseru ネーム" />
         </div>
       </div>
     </Link>
@@ -43,5 +41,3 @@ export function midiumLogo() {
   );
 }
 */
-
-

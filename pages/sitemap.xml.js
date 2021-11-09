@@ -1,4 +1,4 @@
-import {BlogNum} from "../lib/GraphQl"
+import { BlogNum } from "../lib/GraphQl";
 
 const generateSitemap = (blogList, origin) => {
   let xml = `
@@ -30,24 +30,24 @@ const generateSitemap = (blogList, origin) => {
 };
 
 export async function getServerSideProps({ res }) {
-    const gqlBox = new BlogNum()
-    const rawdata = await gqlBox.returnData()
-    const dataList = rawdata.data.blogs;
+  const gqlBox = new BlogNum();
+  const rawdata = await gqlBox.returnData();
+  const dataList = rawdata.data.blogs;
 
-    const blogdata = [];
-    dataList.map((dataElm) => {
-        let updatedAt = dataElm.updatedAt.split("T")[0];
-        blogdata.push({ location: dataElm.blogNumber, lastMod: updatedAt });
-    });
+  const blogdata = [];
+  dataList.map((dataElm) => {
+    let updatedAt = dataElm.updatedAt.split("T")[0];
+    blogdata.push({ location: dataElm.blogNumber, lastMod: updatedAt });
+  });
 
-    res.setHeader("Content-Type", "text/xml");
-    res.write(generateSitemap(blogdata, "http://dev.oovo.app/"));
+  res.setHeader("Content-Type", "text/xml");
+  res.write(generateSitemap(blogdata, "http://dev.oovo.app/"));
 
-    res.end();
+  res.end();
 
-    return {
-        props: {},
-    };
+  return {
+    props: {},
+  };
 }
 
 const SitemapIndex = () => null;

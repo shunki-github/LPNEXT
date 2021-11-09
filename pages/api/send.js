@@ -1,9 +1,7 @@
 export default function handler(req, res) {
   if (req.method === "POST") {
     const sgMail = require("@sendgrid/mail");
-    sgMail.setApiKey(
-      process.env.SEND_GRID
-    ); //SendGridのAPIキー
+    sgMail.setApiKey(process.env.SEND_GRID); //SendGridのAPIキー
 
     const sendMsg = {
       to: req.body.email,

@@ -1,92 +1,97 @@
+/*toc*/
+
 .toc {
-    background-color: #f0f1f2;
-    padding: 30px;
+  background-color: #f0f1f2;
+  padding: 30px;
 }
 
 .toc h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .toc nav {
-    padding: 30px;
+  padding: 30px;
+}
+
+/*toc ul&li*/
+.toc li {
+  margin-bottom: 10px;
 }
 
 .toc ul {
-    list-style: none;
+  list-style: none;
 }
 
-.toc li {
-    margin-bottom: 10px;
-}
+/*content*/
 
 .content {
-    padding-top: 50px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 27.2px;
-    letter-spacing: 0.2px;
-}
-
-.content img {
-    width: 600px;
-    height: 400px;
-    object-fit: cover;
-    margin: 20px 0 40px 0;
-}
-
-.content h1 {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 46px;
-    padding-bottom: 1em;
-}
-
-.content h2 {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 42px;
-    padding-bottom: 1em;
-}
-
-.content h3 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 34px;
-    padding-bottom: 1em;
-}
-
-.content h4 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    padding-bottom: 1em;
-}
-
-.content h5 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-    padding-bottom: 1em;
-}
-
-.content h6 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    padding-bottom: 1em;
-}
-
-.content p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27.2px;
-    padding-bottom: 2em;
-}
-
-.content strong {
-    font-weight: 700;
+  padding-top: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+  letter-spacing: 0.2px;
 }
 
 .content a {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+.content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+  padding-bottom: 1em;
+}
+
+.content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  padding-bottom: 1em;
+}
+
+.content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  padding-bottom: 1em;
+}
+
+.content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-bottom: 1em;
+}
+
+.content h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-bottom: 1em;
+}
+
+.content h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-bottom: 1em;
+}
+
+.content img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin: 20px 0 40px 0;
+}
+
+.content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  padding-bottom: 2em;
+}
+
+.content strong {
+  font-weight: 700;
 }
