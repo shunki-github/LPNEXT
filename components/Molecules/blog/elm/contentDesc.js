@@ -1,10 +1,10 @@
 /* eslint-disable */
 import { RichText } from "@graphcms/rich-text-react-renderer";
-import styles from "./contentdesc.module.css"
+import styles from "./ContentDesc.module.css";
 
-export default function contentBody(descContents) {
-    return (
-        <div className={styles.desc}>
+export default function ContentDesc(descContents) {
+  return (
+    <div className={styles.desc}>
       <RichText
         content={descContents}
         renderers={{
@@ -16,9 +16,9 @@ export default function contentBody(descContents) {
           h6: ({ children }) => <h6 className={styles.body__h6}>{children}</h6>,
           p: ({ children }) => <p className={styles.body__p}>{children}</p>,
           bold: ({ children }) => <strong>{children}</strong>,
-          code: ({}) => <br/>
+          code: ({}) => <br />,
         }}
       />
-      </div>
-    );
+    </div>
+  );
 }

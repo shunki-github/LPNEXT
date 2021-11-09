@@ -1,34 +1,38 @@
+/*common*/
+
 .icon {
-    border-radius: 4px;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: 6px;
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 6px;
 }
 
-.mail {
-    background-color: #131416;
-    padding-top: 2px;
-}
-
-.pinterest {
-    background-color: #b90315;
-    padding-top: 4px;
-}
+/*special*/
 
 .facebook {
-    background-color: #4064ad;
-    padding-top: 4px;
-}
-
-.twitter {
-    background-color: #1e9ceb;
-    padding-top: 4px;
+  background-color: #4064ad;
+  padding-top: 4px;
 }
 
 .linkedin {
-    background-color: #0273af;
-    padding-top: 4px;
+  background-color: #0273af;
+  padding-top: 4px;
+}
+
+.mail {
+  background-color: #131416;
+  padding-top: 2px;
+}
+
+.pinterest {
+  background-color: #b90315;
+  padding-top: 4px;
+}
+
+.twitter {
+  background-color: #1e9ceb;
+  padding-top: 4px;
 }

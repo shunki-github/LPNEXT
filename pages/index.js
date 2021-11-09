@@ -1,19 +1,15 @@
 import { useRouter } from "next/router";
-import TempHome from "../components/Templates/home"
+import TempHome from "../components/Templates/TempHome";
 
 export default function Home() {
-    const { locale, asPath } = useRouter();
+  const { locale, asPath } = useRouter();
 
-    return (
-        <>
-        {TempHome(asPath, locale)}
-        </>
-    );
-    }
+  return <>{TempHome(asPath, locale)}</>;
+}
 
 export async function getServerSideProps({ res }) {
-    res.setHeader("Cache-Control", "public, s-maxage=10, stale-if-error=60");
-    return {
-        props: {},
-    };
+  res.setHeader("Cache-Control", "public, s-maxage=10, stale-if-error=60");
+  return {
+    props: {},
+  };
 }

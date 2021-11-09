@@ -12,9 +12,9 @@ import {
   PinterestShareButton,
   LinkedinShareButton,
 } from "react-share";
-import styles from "./share.module.css"
+import styles from "./Share.module.css";
 
-export default function shareList(data, asPath) {
+export default function ShareList(data, asPath) {
   if (data === undefined) return <div />;
 
   return (
