@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      - name: Cypress.io
+      #- name: Cypress.io
         # You may pin to the exact commit or the version.
         # uses: cypress-io/github-action@f06537910911844bce953022f6d643a0f69fd73b
-        uses: cypress-io/github-action@v2.9.7
+        #uses: cypress-io/github-action@v2.9.7
