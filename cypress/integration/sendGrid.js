@@ -1,6 +1,9 @@
 /* eslint-disable */
 
 describe("SendGrid test", () => {
+  it.only("only github action", () => {
+    console.log("send email skip.")
+  }),
   it("send email via SendGrid",async () => {
     let url = "/pages/api/send.js"
     let req = {
