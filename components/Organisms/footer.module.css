@@ -1,0 +1,48 @@
+.container {
+  background-color: var(--brand-color);
+  padding-top: 1%;
+}
+
+/*bottom*/
+.bottom {
+  flex-wrap: wrap;
+  padding: 0 30px 50px 30px;
+}
+
+.bottom__button {
+  width: 300px;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.botto__row {
+  display: flex;
+  flex-direction: row;
+}
+
+/*other*/
+.copyRight {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  right: 0;
+}
+
+@media screen and (max-width: 880px) {
+  .bottom__button {
+    font-size: 24px;
+  }
+
+  .bottom {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bottom__button {
+    font-size: 20px;
+  }
+}

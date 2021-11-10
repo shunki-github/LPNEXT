@@ -1,0 +1,10 @@
+.form__submit {
+  padding-top: 20px;
+  text-align: right;
+}
+
+@media screen and (max-width: 720px) {
+  .service__form__submit {
+    padding-top: 40px;
+  }
+}

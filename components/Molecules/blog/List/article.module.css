@@ -1,0 +1,80 @@
+/*article*/
+.article {
+  margin: 10px;
+  cursor: pointer;
+}
+.article Image {
+  object-fit: cover;
+}
+
+.article__content {
+  padding: 10px;
+}
+
+.article__content__category {
+  color: var(--light-brand-color);
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.blog__list__unit__card__author {
+  font-size: 13px;
+  margin-right: auto;
+}
+
+.blog__list__unit__card__createdAt {
+  font-size: 13px;
+  text-align: right;
+}
+
+.article__content__other {
+  display: flex;
+  flex-direction: flex-end;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.article__content__other--top {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.article__content__title {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  line-height: 21.4px;
+}
+
+.article__content__title--top {
+  font-size: 32px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  line-height: 42.7px;
+}
+
+.article--top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.article--top Image {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .article__content__title--top,
+  .article__content__title {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    line-height: 21.4px;
+  }
+}
