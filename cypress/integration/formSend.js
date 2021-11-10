@@ -1,7 +1,7 @@
 /* eslint-disable */
 describe("form test", () => {
   it("Visits the contact page", () => {
-    cy.visit("http://dev.oovo.app/contact");
+    cy.visit("http://localhost:3000/contact");
   }),
     it("Input name", () => {
       cy.get("#name").type("this is test");

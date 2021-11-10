@@ -8,6 +8,7 @@ import TempContact from "../components/Templates/TempContact";
 
 export default function Contact() {
   const registerUser = async (event) => {
+    console.log("hi")
     event.preventDefault();
     const res = await fetch("/api/Send", {
       body: JSON.stringify({
@@ -21,9 +22,10 @@ export default function Contact() {
       },
       method: "POST",
     });
-    //await res.json();
-    const result = await res.json();
-    afterSend(result);
+    await res.json();
+    //const result = await res.json();
+    //console.log(result)
+    //afterSend(result);
   };
 
   const testsend = async (event) => {
@@ -57,5 +59,5 @@ export default function Contact() {
     });
   };
 
-  return <>{TempContact(asPath, locale, router, testsend)}</>;
+  return <>{TempContact(asPath, locale, router, registerUser)}</>;
 }
