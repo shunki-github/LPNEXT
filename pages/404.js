@@ -1,6 +1,6 @@
 import styles from "../styles/404.module.css";
 import Head from "next/head";
-import BigLogo from "../components/Molecules/Logo";
+import BigLogo from "../components/Molecules/logo";
 import Link from "next/link";
 
 export default function Custom404() {
