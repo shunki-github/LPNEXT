@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { RichText } from "@graphcms/rich-text-react-renderer";
-import styles from "./ContentBody.module.css";
+import styles from "./contentBody.module.css";
 
 export default function ContentBody(blog, bodyContents) {
   return (

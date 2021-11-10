@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import ContWhite from "../Atoms/button/ContWhite";
-import TextWhite from "../Atoms/button/TextWhite";
+import ContWhite from "../Atoms/button/contWhite";
+import TextWhite from "../Atoms/button/textWhite";
 
 export function JA(locale, asPath) {
   if (locale === "ja") {

@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import styles from "./Body.module.css";
+import styles from "./body.module.css";
 
-import RankList from "../../sub/RankList";
-import RelateList from "../../sub/RelateList";
+import RankList from "../../sub/rankList";
+import RelateList from "../../sub/relateList";
 
-import ContentBody from "../../../Molecules/blog/elm/ContentBody";
-import ContentDesc from "../../../Molecules/blog/elm/ContentDesc";
-import TopImage from "../../../Molecules/blog/elm/TopImage";
+import ContentBody from "../../../Molecules/blog/elm/contentBody";
+import ContentDesc from "../../../Molecules/blog/elm/contentDesc";
+import TopImage from "../../../Molecules/blog/elm/topImage";
 
-import ShareList from "../../../Molecules/Share";
+import ShareList from "../../../Molecules/share";
 import Link from "next/link";
 
 export class Body extends Component {

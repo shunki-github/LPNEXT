@@ -1,10 +1,10 @@
 import Head from "next/head";
 
 import React, { useRef } from "react";
-import Header from "../Organisms/other/Header";
-import Footer from "../Organisms/Footer";
+import Header from "../Organisms/other/header";
+import Footer from "../Organisms/footer";
 
-import Body from "../Organisms/other/list/Body";
+import Body from "../Organisms/other/list/body";
 
 export default function TempBlog(asPath, locale, staticData) {
   const renderFlgRef = useRef(false);

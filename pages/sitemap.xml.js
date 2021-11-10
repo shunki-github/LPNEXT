@@ -1,4 +1,4 @@
-import { BlogNum } from "../lib/GraphQl";
+import { BlogNum } from "../lib/graphQl";
 
 const generateSitemap = (blogList, origin) => {
   let xml = `

@@ -3,13 +3,13 @@ import Head from "next/head";
 import React, { useEffect } from "react";
 import tocbot from "tocbot";
 
-import Body from "../../Organisms/other/elm/Body";
-import FooterBlog from "../../Organisms/other/elm/FooterBlog";
+import Body from "../../Organisms/other/elm/body";
+import FooterBlog from "../../Organisms/other/elm/footerBlog";
 
 import en from "../../../public/locales/en/common.json";
 import ja from "../../../public/locales/ja/common.json";
 
-import Header from "../../Organisms/other/Header";
+import Header from "../../Organisms/other/header";
 
 export default function TempBlogDetail(asPath, locale, staticData) {
   let blog = staticData.staticData[0];

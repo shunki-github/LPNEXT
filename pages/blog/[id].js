@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import React from "react";
 
-import { BlogElm, BlogList } from "../../lib/GraphQl";
-import TempBlogDetail from "../../components/Templates/blog/TempBlogDetail.js";
+import { BlogElm, BlogList } from "../../lib/graphQl";
+import TempBlogDetail from "../../components/Templates/blog/tempBlogDetail.js";
 
 export default function Blog(staticData) {
   const { locale, asPath } = useRouter();

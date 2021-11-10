@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
-import styles from "./FooterBlog.module.css";
-import ShareList from "../../../Molecules/Share";
+import styles from "./footerBlog.module.css";
+import ShareList from "../../../Molecules/share";
 
-import RelateListImage from "../../sub/RelateListImage";
-import RankList from "../../sub/RankList";
+import RelateListImage from "../../sub/relateListImage";
+import RankList from "../../sub/rankList";
 
-import Footer from "../../Footer";
+import Footer from "../../footer";
 
 export class FooterBlog extends Component {
   render() {

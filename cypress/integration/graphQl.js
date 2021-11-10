@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import { BlogNum } from "../../lib/GraphQl"
+import { BlogNum } from "../../lib/graphQl"
 
 describe("GraphQL Blog is active, and not 0", () => {
   it("GraphQL Blog is active, and not 0",async () => {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "./Body.module.css";
+import styles from "./body.module.css";
 import Image from "next/image";
 import en from "../../../public/locales/en/common.json";
 import ja from "../../../public/locales/ja/common.json";

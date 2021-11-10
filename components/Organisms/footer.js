@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "./Footer.module.css";
+import styles from "./footer.module.css";
 import * as gtag from "../../src/gtag";
 
 import BigLogo from "../Molecules/logo";

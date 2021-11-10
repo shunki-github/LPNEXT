@@ -6,7 +6,7 @@ import {
   Input,
   Text,
 } from "@chakra-ui/react";
-import ContainBlue from "../Atoms/button/ContainBlue";
+import ContainBlue from "../Atoms/button/containBlue";
 
 export default function Form(submitFunc, text) {
   return (

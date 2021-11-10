@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Link from "next/link";
 import * as gtag from "../../../src/gtag";
-import { JA, EN } from "../../Molecules/I18n";
-import OutWhite from "../../Atoms/button/OutWhite";
-import OutOrange from "../../Atoms/button/OutOrange";
+import { JA, EN } from "../../Molecules/i18n";
+import OutWhite from "../../Atoms/button/outWhite";
+import OutOrange from "../../Atoms/button/outOrange";
 
 import BigLogo from "../../Molecules/logo";
-import styles from "./Header.module.css";
+import styles from "./header.module.css";
 
 import { VscClose, VscListFlat } from "react-icons/vsc";
 

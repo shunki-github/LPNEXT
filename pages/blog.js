@@ -2,9 +2,9 @@
 
 import { useRouter } from "next/router";
 import React from "react";
-import { BlogList } from "../lib/GraphQl";
+import { BlogList } from "../lib/graphQl";
 
-import TempBlog from "../components/Templates/TempBlog";
+import TempBlog from "../components/Templates/tempBlog";
 
 export default function Blog(staticData) {
   const { locale, asPath } = useRouter();

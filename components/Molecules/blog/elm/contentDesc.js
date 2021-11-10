@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { RichText } from "@graphcms/rich-text-react-renderer";
-import styles from "./ContentDesc.module.css";
+import styles from "./contentDesc.module.css";
 
 export default function ContentDesc(descContents) {
   return (

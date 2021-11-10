@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./Sub.module.css";
+import styles from "./sub.module.css";
 
 export default function RelateListImage(rawRelated, from = "") {
   return rawRelated.map((relate) => (

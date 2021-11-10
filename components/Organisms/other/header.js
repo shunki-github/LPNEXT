@@ -1,6 +1,6 @@
-import { JA, EN } from "../../Molecules/I18n";
+import { JA, EN } from "../../Molecules/i18n";
 import BigLogo from "../../Molecules/logo";
-import styles from "./Header.module.css";
+import styles from "./header.module.css";
 
 export default function Header(locale, asPath) {
   return (

@@ -2,7 +2,7 @@
 
 describe("SendGrid test", () => {
   it("send email via SendGrid",async () => {
-    let url = "/pages/api/Send.js"
+    let url = "/pages/api/send.js"
     let req = {
       body: JSON.stringify({
         email: "jest.react.next@gmail.com",

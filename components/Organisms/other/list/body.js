@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import styles from "./Body.module.css";
+import styles from "./body.module.css";
 
-import TopComponent from "../../../Molecules/blog/List/TopBlog";
-import BlogList from "../../../Molecules/blog/List/BlogList";
-import RankList from "../../sub/RankList";
+import TopComponent from "../../../Molecules/blog/List/topBlog";
+import BlogList from "../../../Molecules/blog/List/blogList";
+import RankList from "../../sub/rankList";
 
 import en from "../../../../public/locales/en/common.json";
 import ja from "../../../../public/locales/ja/common.json";

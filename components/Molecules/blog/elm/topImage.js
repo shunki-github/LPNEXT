@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./TopImage.module.css";
+import styles from "./topImage.module.css";
 
 export default function TopImage(blog) {
   if (blog === undefined) return <div />;

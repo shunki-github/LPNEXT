@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Header from "../Organisms/home/Header";
-import Body from "../Organisms/home/Body";
-import Footer from "../Organisms/Footer";
+import Header from "../Organisms/home/header";
+import Body from "../Organisms/home/body";
+import Footer from "../Organisms/footer";
 
 export default function TempHome(asPath, locale) {
   return (

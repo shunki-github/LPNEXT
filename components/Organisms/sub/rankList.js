@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./Sub.module.css";
+import styles from "./sub.module.css";
 
 export default function RankList(rawRanking, from = "") {
   return rawRanking.map((rank) => (
