@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "./contact.module.css";
 
 import Header from "../Organisms/other/header";
-import OutBlue from "../Atoms/button/outBlue";
+import OutBlue from "../Atoms/button/OutBlue";
 import Form from "../Molecules/form";
 
 import en from "../../public/locales/en/common.json";

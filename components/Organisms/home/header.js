@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Link from "next/link";
 import * as gtag from "../../../src/gtag";
 import { JA, EN } from "../../Molecules/i18n";
-import OutWhite from "../../Atoms/button/outWhite";
-import OutOrange from "../../Atoms/button/outOrange";
+import OutWhite from "../../Atoms/button/OutWhite";
+import OutOrange from "../../Atoms/button/OutOrange";
 
 import BigLogo from "../../Molecules/logo";
 import styles from "./header.module.css";
