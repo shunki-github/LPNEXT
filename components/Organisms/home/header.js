@@ -5,7 +5,7 @@ import { JA, EN } from "../../Molecules/I18n";
 import OutWhite from "../../Atoms/button/OutWhite";
 import OutOrange from "../../Atoms/button/OutOrange";
 
-import BigLogo from "../../Molecules/Logo";
+import BigLogo from "../../Molecules/logo";
 import styles from "./Header.module.css";
 
 import { VscClose, VscListFlat } from "react-icons/vsc";

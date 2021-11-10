@@ -2,7 +2,7 @@
 //import Image from "next/image"
 
 import Link from "next/link";
-import styles from "./Logo.module.css";
+import styles from "./logo.module.css";
 
 export default function BigLogo() {
   return (

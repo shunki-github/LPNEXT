@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styles from "./Footer.module.css";
 import * as gtag from "../../src/gtag";
 
-import BigLogo from "../Molecules/Logo";
+import BigLogo from "../Molecules/logo";
 
 export class footer extends Component {
   constructor(props) {
