@@ -8,7 +8,6 @@ import TempContact from "../components/Templates/contact";
 
 export default function Contact() {
   const registerUser = async (event) => {
-    console.log("hi")
     event.preventDefault();
     const res = await fetch("/api/Send", {
       body: JSON.stringify({
@@ -22,25 +21,25 @@ export default function Contact() {
       },
       method: "POST",
     });
-    await res.json();
-    //const result = await res.json();
-    //console.log(result)
-    //afterSend(result);
+    //await res.json();
+    const result = await res
+    //console.log(result.status)
+    afterSend(result);
   };
 
   const testsend = async (event) => {
     event.preventDefault();
-    afterSend("200");
+    afterSend(200);
   };
 
   const afterSend = (result) => {
-    if (result === "200") {
+    if (result.status === 200) {
       alert("送信が成功しました");
-      //add
       handler();
       router.back();
     } else {
       alert("送信が失敗しました");
+      console.log(result)
     }
   };
 

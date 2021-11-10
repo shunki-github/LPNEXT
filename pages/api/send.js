@@ -1,12 +1,7 @@
 export default function handler(req, res) {
   if (req.method === "POST") {
     const sgMail = require("@sendgrid/mail");
-    //if (req.apiKey !== undefined) {
-    //  sgMail.setApiKey(req.apiKey);
-    //} else {
-      sgMail.setApiKey(process.env.SEND_GRID);
-    //}
-
+    sgMail.setApiKey(process.env.SEND_GRID);
 
     const sendMsg = {
       to: req.body.email,
@@ -44,18 +39,18 @@ export default function handler(req, res) {
       try {
         await sgMail.send(sendMsg);
       } catch (error) {
-        console.error(error);
+        //console.error(error);
         if (error.response) {
-          console.error("返信メールでエラー： " + error.response.body);
+          //console.error("返信メールでエラー： " + error.response.body);
         }
       }
 
       try {
         await sgMail.send(acceptMsg);
       } catch (error) {
-        console.error(error);
+        //console.error(error);
         if (error.response) {
-          console.error("返信メールでエラー： " + error.response.body);
+          //console.error("返信メールでエラー： " + error.response.body);
         }
       }
     })();

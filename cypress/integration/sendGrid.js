@@ -1,11 +1,12 @@
 /* eslint-disable */
 
 describe("SendGrid test", () => {
-  it.only("only github action", () => {
-    console.log("send email skip.")
-  }),
+  //it.only("only github action", () => {
+    //console.log("send email skip.")
+  //}),
   it("send email via SendGrid",async () => {
-    let url = "/pages/api/send.js"
+    let url = "http://localhost:3000/api/send"
+    // forbidden access, it is because CORS
     let req = {
       body: JSON.stringify({
         email: "jest.react.next@gmail.com",
@@ -21,8 +22,13 @@ describe("SendGrid test", () => {
     }
 
     const res = await fetch(url, req);
-    console.log(res)
     const result = await res.json();
-    console.log(result)
+    if(result.status === 200) {
+      console.log("OK")
+      console.log(result)
+    } else {
+      console.log("Failed")
+      console.log(result)
+    }
   })
 });
