@@ -1,0 +1,35 @@
+.footer__add {
+  padding: 0 100px 50px 100px;
+}
+
+.footer__box {
+  border-top: solid 1px lightgrey;
+  padding: 30px 0 10px 0;
+}
+
+.footer__box--bottom {
+  border-top: solid 1px lightgrey;
+  padding: 30px 0 50px 0;
+}
+
+.footer__box__list--relate {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer__box__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--sub-section-title-color);
+  padding-bottom: 20px;
+}
+
+.share {
+  display: flex;
+  flex-direction: row;
+  border-top: solid 1px lightgrey;
+  padding: 40px 0;
+}
