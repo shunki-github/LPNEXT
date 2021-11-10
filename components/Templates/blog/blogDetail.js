@@ -85,13 +85,6 @@ export default function TempBlogDetail(asPath, locale, staticData) {
             rawRelated={rawRelated}
             subText={subText}
           />
-        </div>
-      </main>
-    </div>
-  );
-}
-
-/*
           <BlogFooter
             asPath={asPath}
             blog={blog}
@@ -99,4 +92,8 @@ export default function TempBlogDetail(asPath, locale, staticData) {
             rawRelated={rawRelated}
             subText={subText}
           />
-*/
+        </div>
+      </main>
+    </div>
+  );
+}
