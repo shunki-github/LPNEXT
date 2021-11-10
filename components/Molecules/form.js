@@ -11,7 +11,7 @@ import {
 //  GoogleReCaptcha,
 //} from "react-google-recaptcha-v3";
 
-import ContBlue from "../Atoms/button/contBlue";
+import ContBlue from "../Atoms/button/ContBlue";
 import styles from "./form.module.css";
 
 export default function Form(sendfunc, contactText) {

@@ -1,5 +1,4 @@
 import Head from "next/head";
-
 import React, { useEffect } from "react";
 import tocbot from "tocbot";
 
