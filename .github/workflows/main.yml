@@ -34,7 +34,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          runTests: graphQL.js
 
       #- name: Cypress.io
         # You may pin to the exact commit or the version.
