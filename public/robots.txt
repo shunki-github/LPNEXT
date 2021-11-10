@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://dev.oovo.app/sitemap.xml
