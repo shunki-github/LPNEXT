@@ -6,7 +6,7 @@ import ShareList from "../../../Molecules/share";
 import RelateListImage from "../../sub/relateListImage";
 import RankList from "../../sub/rankList";
 
-import Footer from "../../footer";
+import Footer from "../../footer.js";
 
 export class FooterBlog extends Component {
   render() {

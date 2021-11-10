@@ -4,7 +4,7 @@ import * as gtag from "../../src/gtag";
 
 import BigLogo from "../Molecules/logo";
 
-export class footer extends Component {
+export class Footer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -59,4 +59,4 @@ export class footer extends Component {
   }
 }
 
-export default footer;
+export default Footer;
