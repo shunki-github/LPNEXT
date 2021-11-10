@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styles from "./Footer.module.css";
-import * as gtag from "../../src/Gtag";
+import * as gtag from "../../src/gtag";
 
 import BigLogo from "../Molecules/Logo";
 

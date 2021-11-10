@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import * as gtag from "../../../src/Gtag";
+import * as gtag from "../../../src/gtag";
 import { JA, EN } from "../../Molecules/I18n";
 import OutWhite from "../../Atoms/button/OutWhite";
 import OutOrange from "../../Atoms/button/OutOrange";
