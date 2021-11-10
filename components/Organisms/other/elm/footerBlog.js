@@ -8,7 +8,7 @@ import RankList from "../../sub/rankList";
 
 import Footer from "../../footer.js";
 
-export class FooterBlog extends Component {
+export class BlogFooter extends Component {
   render() {
     const { asPath, blog, rawRanking, rawRelated, subText } = this.props;
     const rankBlogs = [];
@@ -61,4 +61,4 @@ export class FooterBlog extends Component {
   }
 }
 
-export default FooterBlog;
+export default BlogFooter;
