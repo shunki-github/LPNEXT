@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import React, { useRef } from "react";
 import Header from "../Organisms/other/header";
-import Footer from "../Organisms/footer";
+import Footer from "../Organisms/footer"
 
 import Body from "../Organisms/other/list/body";
 
