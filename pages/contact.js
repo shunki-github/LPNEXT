@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import { useRouter } from "next/router";
-import * as gtag from "../src/Gtag.js";
+import * as gtag from "../src/Gtag";
 import React, { useState } from "react";
 
 import TempContact from "../components/Templates/TempContact";
