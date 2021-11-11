@@ -52,7 +52,7 @@ export class Footer extends Component {
           </div>
         </div>
         <div className={styles.copyRight}>
-          <p>©︎2021 Shunki Inoue</p>
+          <p>©︎2021 Oovo</p>
         </div>
       </div>
     );
