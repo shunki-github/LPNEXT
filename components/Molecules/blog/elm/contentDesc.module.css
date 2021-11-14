@@ -1,16 +1,15 @@
 /*desc*/
 
-.desc {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 27.2px;
-  letter-spacing: 0.2px;
-}
-
 .desc a {
   text-decoration: underline;
+  -webkit-text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+  -webkit-text-decoration-thickness: 2px;
 }
 
 .desc p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
   padding-bottom: 2rem;
 }
