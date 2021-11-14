@@ -46,7 +46,7 @@
 .article__content__title {
   color: black;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   padding-bottom: 10px;
   line-height: 21.4px;
 }
@@ -73,7 +73,6 @@
   .article__content__title--top,
   .article__content__title {
     font-size: 20px;
-    font-weight: 500;
     padding-bottom: 10px;
     line-height: 21.4px;
   }
