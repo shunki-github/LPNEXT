@@ -213,7 +213,8 @@
   /*service*/
   .service__item__textbox {
     display: block;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
     white-space: normal;
     height: 300px;
   }
@@ -221,7 +222,7 @@
   .service__list {
     display: block;
     overflow-x: auto;
-    overflow-y: visible; /*スマホ版がガタツクのはy軸のoverflowが定まっていないから？*/
+    overflow-y: hidden; /*スマホ版がガタツクのはy軸のoverflowが定まっていないから？*/
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
@@ -235,14 +236,15 @@
   .project__list {
     display: block;
     overflow-x: auto;
-    overflow-y: visible;
+    overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
 
   .project__list div {
     display: block;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
     white-space: normal;
     height: 300px;
   }

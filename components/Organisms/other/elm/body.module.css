@@ -5,7 +5,6 @@
   background-size: cover;
   background-position: center;
   color: white;
-  font-size: 40px;
   font-weight: 800;
   line-height: 48.5px;
   position: relative;
@@ -15,6 +14,7 @@
 .blog-header h1 {
   text-decoration: underline 2px solid;
   cursor: pointer;
+  font-size: 40px;
 }
 
 /*body*/
@@ -161,5 +161,9 @@
 
   .content {
     padding: 30px 30px 0 30px;
+  }
+
+  .blog-header h1 {
+    font-size: 30px;
   }
 }
