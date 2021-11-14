@@ -205,6 +205,7 @@
 
   .point__text {
     width: 100%;
+    padding: 30px 30px 50px 30px;
   }
 }
 
@@ -220,19 +221,21 @@
   .service__list {
     display: block;
     overflow-x: auto;
-
+    overflow-y: visible; /*スマホ版がガタツクのはy軸のoverflowが定まっていないから？*/
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
 
   .service__list li {
     display: inline-block;
+    width: 80%;
   }
 
   /*project*/
   .project__list {
     display: block;
     overflow-x: auto;
+    overflow-y: visible;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
@@ -242,6 +245,10 @@
     overflow: hidden;
     white-space: normal;
     height: 300px;
+  }
+
+  .project__list h3 {
+    height: 20px;
   }
 
   .project__list h4 {
