@@ -34,6 +34,9 @@
 
 .content a {
   text-decoration: underline;
+  -webkit-text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+  -webkit-text-decoration-thickness: 2px;
 }
 
 .content h1 {

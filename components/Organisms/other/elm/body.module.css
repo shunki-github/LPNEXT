@@ -15,6 +15,9 @@
   text-decoration: underline 2px solid;
   cursor: pointer;
   font-size: 40px;
+  -webkit-text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+  -webkit-text-decoration-thickness: 2px;
 }
 
 /*body*/

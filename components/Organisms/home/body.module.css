@@ -28,7 +28,7 @@
 
 .service__list h3 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: #555555;
   flex: 1;
 }
@@ -135,7 +135,7 @@
 
 .project__list h3 {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
   flex: 1;
 }
@@ -212,7 +212,7 @@
 @media screen and (max-width: 750px) {
   /*service*/
   .service__item__textbox {
-    display: block;
+    display: inline-block;
     overflow-x: hidden;
     overflow-y: visible;
     white-space: normal;
@@ -222,7 +222,7 @@
   .service__list {
     display: block;
     overflow-x: auto;
-    overflow-y: hidden; /*スマホ版がガタツクのはy軸のoverflowが定まっていないから？*/
+    overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
@@ -242,7 +242,7 @@
   }
 
   .project__list div {
-    display: block;
+    display: inline-block;
     overflow-x: hidden;
     overflow-y: visible;
     white-space: normal;
