@@ -1,13 +1,13 @@
 import styles from "@/styles/Organisms/blogElmBody.module.css";
 
-import {RankList} from "@/Organisms/sub/rankList";
-import {RelateList} from "@/Organisms/sub/relateList";
+import {RankList} from "@/components/Organisms/sub/rankList";
+import {RelateList} from "@/components/Organisms/sub/relateList";
 
-import {ContentBody} from "@/Molecules/blog/elm/contentBody";
-import {ContentDesc} from "@/Molecules/blog/elm/contentDesc";
-import {TopImage} from "@/Molecules/blog/elm/topImage";
+import {ContentBody} from "@/components/Molecules/blog/elm/contentBody";
+import {ContentDesc} from "@/components/Molecules/blog/elm/contentDesc";
+import {TopImage} from "@/components/Molecules/blog/elm/topImage";
 
-import {ShareList} from "@/Molecules/share";
+import {ShareList} from "@/components/Molecules/share";
 import Link from "next/link";
 
 export function Body(asPath, blog, rawRanking, rawRelated, subText) {

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import * as gtag from "@/src/gtag";
-import { JA, EN } from "@/Molecules/i18n";
-import {OutWhite} from "@/Atoms/button/OutWhite";
-import {OutOrange} from "@/Atoms/button/OutOrange";
+import { JA, EN } from "@/components/Molecules/i18n";
+import {OutWhite} from "@/components/Atoms/button/OutWhite";
+import {OutOrange} from "@/components/Atoms/button/OutOrange";
 
-import {BigLogo} from "@/Molecules/logo";
+import {BigLogo} from "@/components/Molecules/logo";
 import styles from "@/styles/Organisms/homeHeader.module.css";
 
 import { VscClose, VscListFlat } from "react-icons/vsc";

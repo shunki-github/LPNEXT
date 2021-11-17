@@ -1,8 +1,8 @@
 import styles from "@/styles/Organisms/blogListBody.module.css";
 
-import {TopComponent} from "@/Molecules/blog/List/topBlog";
-import {BlogList} from "@/Molecules/blog/List/blogList";
-import {RankList} from "@/Organisms/sub/rankList";
+import {TopComponent} from "@/components/Molecules/blog/List/topBlog";
+import {BlogList} from "@/components/Molecules/blog/List/blogList";
+import {RankList} from "@/components/Organisms/sub/rankList";
 
 import en from "@/public/locales/en/common.json";
 import ja from "@/public/locales/ja/common.json";

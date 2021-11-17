@@ -1,9 +1,9 @@
 import Head from "next/head";
 import styles from "@/styles/Templates/contact.module.css";
 
-import {Header} from "@/Organisms/other/header";
-import {OutBlue} from "@/Atoms/button/OutBlue";
-import {Form} from "@/Molecules/form";
+import {Header} from "@/components/Organisms/other/header";
+import {OutBlue} from "@/components/Atoms/button/OutBlue";
+import {Form} from "@/components/Molecules/form";
 
 import en from "@/public/locales/en/common.json";
 import ja from "@/public/locales/ja/common.json";

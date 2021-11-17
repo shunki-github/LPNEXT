@@ -3,7 +3,7 @@ import * as gtag from "@/src/gtag";
 
 import React, {useState} from "react";
 
-import {BigLogo} from "@/Molecules/logo";
+import {BigLogo} from "@/components/Molecules/logo";
 
 export function Footer(projectPath, contactPath, servicePath, blogPath){
     const [count, setCount] = useState(0);

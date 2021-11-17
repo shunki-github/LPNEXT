@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import * as gtag from "../src/gtag";
 import Script from "next/script";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function MyApp({ Component, pageProps }) {
-  //for analytics
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -37,7 +37,9 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
-      <Component {...pageProps} />
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </>
   );
 

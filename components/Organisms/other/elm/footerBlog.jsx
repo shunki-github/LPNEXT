@@ -1,10 +1,10 @@
 import styles from "@/styles/Organisms/blogElmFooter.module.css";
-import {ShareList} from "@/Molecules/share";
+import {ShareList} from "@/components/Molecules/share";
 
-import {RelateListImage} from "@/Organisms/sub/relateListImage";
-import {RankList} from "@/Organisms/sub/rankList";
+import {RelateListImage} from "@/components/Organisms/sub/relateListImage";
+import {RankList} from "@/components/Organisms/sub/rankList";
 
-import Footer from "@/Organisms/footer.js";
+import Footer from "@/components/Organisms/footer.jsx";
 
 export function BlogFooter(asPath, blog, rawRanking, rawRelated, subText) {
     const rankBlogs = [];

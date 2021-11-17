@@ -1,8 +1,7 @@
-import { ChakraProvider, Box } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 export function ContWhite(text) {
   return (
-    <ChakraProvider>
       <Box
         as="button"
         height="24px"
@@ -25,6 +24,5 @@ export function ContWhite(text) {
       >
         {text}
       </Box>
-    </ChakraProvider>
   );
 }

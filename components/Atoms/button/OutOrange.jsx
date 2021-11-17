@@ -1,29 +1,26 @@
-import { ChakraProvider, Box } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
-export function ContBlue(text) {
+export function OutOrange(text) {
   return (
-    <ChakraProvider>
       <Box
-        type="submit"
         as="button"
         height="40px"
         lineHeight="1.2"
         transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
         border="1px"
-        px="30px"
+        px="20px"
+        width="100px"
         borderRadius="8px"
         fontSize="14px"
         fontWeight="semibold"
-        bg="#062572"
-        borderColor="#062572"
-        color="white"
+        bg="none"
+        borderColor="orange"
+        color="orange"
         _hover={{
-          bg: "#062572",
-          color: "white",
+          opacity: 0.5,
         }}
       >
         {text}
       </Box>
-    </ChakraProvider>
   );
 }

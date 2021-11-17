@@ -42,7 +42,6 @@ export async function getServerSideProps({ res }) {
 
   res.setHeader("Content-Type", "text/xml");
   res.write(generateSitemap(blogdata, "http://dev.oovo.app/"));
-
   res.end();
 
   return {
