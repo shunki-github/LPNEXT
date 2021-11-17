@@ -1,14 +1,14 @@
 import Head from "next/head";
-import styles from "./contact.module.css";
+import styles from "@/styles/Templates/contact.module.css";
 
-import Header from "../Organisms/other/header";
-import OutBlue from "../Atoms/button/OutBlue";
-import Form from "../Molecules/form";
+import {Header} from "@/Organisms/other/header";
+import {OutBlue} from "@/Atoms/button/OutBlue";
+import {Form} from "@/Molecules/form";
 
-import en from "../../public/locales/en/common.json";
-import ja from "../../public/locales/ja/common.json";
+import en from "@/public/locales/en/common.json";
+import ja from "@/public/locales/ja/common.json";
 
-export default function TempContact(asPath, locale, router, sendfunc) {
+export function TempContact(asPath, locale, router, sendfunc) {
   let t = locale === "ja" ? ja : en;
 
   return (

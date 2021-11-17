@@ -1,6 +1,6 @@
 /*common*/
 .container {
-  background-image: url(../../../public/HomeHeader.webp);
+  background-image: url(../../public/HomeHeader.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #f7f7f7;

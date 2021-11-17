@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Header from "../Organisms/home/header";
-import Body from "../Organisms/home/body";
-import Footer from "../Organisms/footer";
+import {Header} from "@/Organisms/home/header";
+import {Body} from "@/Organisms/home/body";
+import {Footer} from "@/Organisms/footer";
 
-export default function TempHome(asPath, locale) {
+export function TempHome(asPath, locale) {
   return (
     <div className={"container"}>
       <Head>
@@ -32,14 +32,9 @@ export default function TempHome(asPath, locale) {
         />
       </Head>
       <main>
-        <Header locale={locale} asPath={asPath} />
-        <Body locale={locale} asPath={asPath} />
-        <Footer
-          projectPath="#project"
-          contactPath="/contact"
-          servicePath="#service"
-          blogPath="/blog"
-        />
+        {Header(asPath, locale)}
+        {Body(locale)}
+        {Footer("#project", "/contact", "#service", "/blog")}
       </main>
     </div>
   );

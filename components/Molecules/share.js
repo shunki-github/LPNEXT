@@ -12,16 +12,16 @@ import {
   PinterestShareButton,
   LinkedinShareButton,
 } from "react-share";
-import styles from "./share.module.css";
+import styles from "@/styles/Molecules/share.module.css";
 
-export default function ShareList(data, asPath) {
+export function ShareList(data, asPath) {
   if (!data) return <div />;
 
   return (
     <div className={styles.share}>
       <EmailShareButton url={`dev.oovo.app${asPath}`} body={data.title}>
         <div className={`${styles.icon} ${styles.mail}`}>
-          <MdMail color="white" fontSize="1.3em" />
+          <MdMail color="white" fontSize="1.3rem" />
         </div>
       </EmailShareButton>
       <PinterestShareButton
@@ -30,7 +30,7 @@ export default function ShareList(data, asPath) {
         description={data.title}
       >
         <div className={`${styles.icon} ${styles.pinterest}`}>
-          <FaPinterestP color="white" fontSize="1.1em" />
+          <FaPinterestP color="white" fontSize="1.1rem" />
         </div>
       </PinterestShareButton>
       <FacebookShareButton
@@ -39,7 +39,7 @@ export default function ShareList(data, asPath) {
         hashtag="oovo"
       >
         <div className={`${styles.icon} ${styles.facebook}`}>
-          <FaFacebookF color="white" fontSize="1.1em" />
+          <FaFacebookF color="white" fontSize="1.1rem" />
         </div>
       </FacebookShareButton>
       <TwitterShareButton
@@ -48,7 +48,7 @@ export default function ShareList(data, asPath) {
         hashtags={["oovo", data.category]}
       >
         <div className={`${styles.icon} ${styles.twitter}`}>
-          <FaTwitter color="white" fontSize="1.1em" />
+          <FaTwitter color="white" fontSize="1.1rem" />
         </div>
       </TwitterShareButton>
       <LinkedinShareButton

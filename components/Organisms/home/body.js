@@ -1,12 +1,9 @@
-import React, { Component } from "react";
-import styles from "./body.module.css";
+import styles from "@/styles/Organisms/homeBody.module.css";
 import Image from "next/image";
-import en from "../../../public/locales/en/common.json";
-import ja from "../../../public/locales/ja/common.json";
+import en from "@/public/locales/en/common.json";
+import ja from "@/public/locales/ja/common.json";
 
-export class Body extends Component {
-  render() {
-    const { locale } = this.props;
+export function Body(locale) {
 
     let t = locale === "ja" ? ja : en;
 
@@ -103,7 +100,4 @@ export class Body extends Component {
         </div>
       </div>
     );
-  }
 }
-
-export default Body;

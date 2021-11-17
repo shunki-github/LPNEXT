@@ -1,7 +1,7 @@
 import Link from "next/link";
-import styles from "./sub.module.css";
+import styles from "@/styles/Organisms/sub.module.css";
 
-export default function RelateList(rawRelated, from = "") {
+export function RelateList(rawRelated, from = "") {
   return rawRelated.map((relate) => (
     <div key={relate.key} className={styles["side-unit"]}>
       <Link href={from + relate.blogNumber.toString()}>

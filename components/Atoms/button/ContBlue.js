@@ -1,6 +1,6 @@
 import { ChakraProvider, Box } from "@chakra-ui/react";
 
-export default function ContBlue(text) {
+export function ContBlue(text) {
   return (
     <ChakraProvider>
       <Box

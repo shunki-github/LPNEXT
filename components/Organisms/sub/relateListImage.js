@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./sub.module.css";
+import styles from "@/styles/Organisms/sub.module.css";
 
-export default function RelateListImage(rawRelated, from = "") {
+export function RelateListImage(rawRelated, from = "") {
   return rawRelated.map((relate) => (
     <div key={relate.key} className={styles["card-image"]}>
       <Link href={from + relate.blogNumber.toString()}>

@@ -1,10 +1,10 @@
 /* eslint-disable */
 
 import { useRouter } from "next/router";
-import * as gtag from "../src/gtag";
+import * as gtag from "@/src/gtag";
 import React, { useState } from "react";
 
-import TempContact from "../components/Templates/contact";
+import {TempContact} from "@/Templates/contact";
 
 export default function Contact() {
   const registerUser = async (event) => {

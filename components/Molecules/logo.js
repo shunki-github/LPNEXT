@@ -2,9 +2,9 @@
 //import Image from "next/image"
 
 import Link from "next/link";
-import styles from "./logo.module.css";
+import styles from "@/styles/Molecules/logo.module.css";
 
-export default function BigLogo() {
+export function BigLogo() {
   return (
     <Link href={{ pathname: `/` }}>
       <a>
