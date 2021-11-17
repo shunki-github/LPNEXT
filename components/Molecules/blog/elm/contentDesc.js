@@ -1,8 +1,8 @@
 /* eslint-disable */
 import { RichText } from "@graphcms/rich-text-react-renderer";
-import styles from "./contentDesc.module.css";
+import styles from "@/styles/Molecules/contentDesc.module.css";
 
-export default function ContentDesc(descContents) {
+export function ContentDesc(descContents) {
   return (
     <div className={styles.desc}>
       <RichText

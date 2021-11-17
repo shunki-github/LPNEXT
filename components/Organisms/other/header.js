@@ -1,8 +1,8 @@
-import { JA, EN } from "../../Molecules/i18n";
-import BigLogo from "../../Molecules/logo";
-import styles from "./header.module.css";
+import { JA, EN } from "@/Molecules/i18n";
+import {BigLogo} from "@/Molecules/logo";
+import styles from "@/styles/Organisms/unHomeHeader.module.css";
 
-export default function Header(locale, asPath) {
+export function Header(locale, asPath) {
   return (
     <div className={styles.container}>
       {BigLogo()}

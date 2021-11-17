@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./article.module.css";
+import styles from "@/styles/Molecules/blogList.module.css";
 
-export default function TopBlog(topBlog) {
+export function TopComponent(topBlog) {
   if (!topBlog) return;
 
   return (

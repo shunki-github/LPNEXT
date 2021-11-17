@@ -1,16 +1,12 @@
-import React, { Component } from "react";
+import styles from "@/styles/Organisms/blogElmFooter.module.css";
+import {ShareList} from "@/Molecules/share";
 
-import styles from "./footerBlog.module.css";
-import ShareList from "../../../Molecules/share";
+import {RelateListImage} from "@/Organisms/sub/relateListImage";
+import {RankList} from "@/Organisms/sub/rankList";
 
-import RelateListImage from "../../sub/relateListImage";
-import RankList from "../../sub/rankList";
+import Footer from "@/Organisms/footer.js";
 
-import Footer from "../../footer.js";
-
-export class BlogFooter extends Component {
-  render() {
-    const { asPath, blog, rawRanking, rawRelated, subText } = this.props;
+export function BlogFooter(asPath, blog, rawRanking, rawRelated, subText) {
     const rankBlogs = [];
     for (let key in rawRanking) {
       rankBlogs.push(rawRanking[key]);
@@ -58,7 +54,4 @@ export class BlogFooter extends Component {
         />
       </>
     );
-  }
 }
-
-export default BlogFooter;

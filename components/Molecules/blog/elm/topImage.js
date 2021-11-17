@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "./topImage.module.css";
+import styles from "@/styles/Molecules/contentTopImage.module.css";
 
-export default function TopImage(blog) {
+export function TopImage(blog) {
   if (!blog) return <div />;
 
   return (

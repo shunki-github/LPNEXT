@@ -1,6 +1,6 @@
 import { ChakraProvider, Box } from "@chakra-ui/react";
 
-export default function OutWhite(text) {
+export function OutWhite(text) {
   return (
     <ChakraProvider>
       <Box

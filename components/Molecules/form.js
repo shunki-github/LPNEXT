@@ -7,10 +7,10 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import ContBlue from "../Atoms/button/ContBlue";
-import styles from "./form.module.css";
+import {ContBlue} from "@/Atoms/button/ContBlue";
+import styles from "@/styles/Molecules/form.module.css";
 
-export default function Form(sendfunc, contactText) {
+export function Form(sendfunc, contactText) {
   return (
     <ChakraProvider>
       <form onSubmit={sendfunc}>

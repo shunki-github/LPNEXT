@@ -1,12 +1,12 @@
 import Head from "next/head";
 
 import React, { useRef } from "react";
-import Header from "../Organisms/other/header";
-import Footer from "../Organisms/footer.js";
+import {Header} from "@/Organisms/other/header";
+import {Footer} from "@/Organisms/footer.js";
 
-import Body from "../Organisms/other/list/body.js";
+import {Body} from "@/Organisms/other/list/body.js";
 
-export default function TempBlog(asPath, locale, staticData) {
+export function TempBlog(asPath, locale, staticData) {
   const renderFlgRef = useRef(false);
 
   if (staticData.staticData.length !== 0 && !renderFlgRef.current) {
@@ -44,19 +44,8 @@ export default function TempBlog(asPath, locale, staticData) {
       </Head>
       <main>
         {Header(locale, asPath)}
-        <Body
-          locale={locale}
-          asPath={asPath}
-          rawBlogs={rawBlogs}
-          rawRanking={rawRanking}
-        />
-
-        <Footer
-          projectPath="/#project"
-          contactPath="/contact"
-          servicePath="/#service"
-          blogPath="/blog"
-        />
+        {Body(locale, rawBlogs, rawRanking)}
+        {Footer("/#project", "/contact", "/#service", "/blog")}
       </main>
     </div>
   );

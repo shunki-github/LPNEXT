@@ -1,19 +1,16 @@
-import React, { Component } from "react";
-import styles from "./body.module.css";
+import styles from "@/styles/Organisms/blogElmBody.module.css";
 
-import RankList from "../../sub/rankList";
-import RelateList from "../../sub/relateList";
+import {RankList} from "@/Organisms/sub/rankList";
+import {RelateList} from "@/Organisms/sub/relateList";
 
-import ContentBody from "../../../Molecules/blog/elm/contentBody";
-import ContentDesc from "../../../Molecules/blog/elm/contentDesc";
-import TopImage from "../../../Molecules/blog/elm/topImage";
+import {ContentBody} from "@/Molecules/blog/elm/contentBody";
+import {ContentDesc} from "@/Molecules/blog/elm/contentDesc";
+import {TopImage} from "@/Molecules/blog/elm/topImage";
 
-import ShareList from "../../../Molecules/share";
+import {ShareList} from "@/Molecules/share";
 import Link from "next/link";
 
-export class Body extends Component {
-  render() {
-    const { asPath, blog, rawRanking, rawRelated, subText } = this.props;
+export function Body(asPath, blog, rawRanking, rawRelated, subText) {
 
     let createeDate = blog.createdAt.split("T")[0];
     let desc = blog.richDesc;
@@ -126,7 +123,4 @@ export class Body extends Component {
         </div>
       </>
     );
-  }
 }
-
-export default Body;

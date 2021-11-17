@@ -1,32 +1,18 @@
-import React, { Component } from "react";
-import styles from "./footer.module.css";
-import * as gtag from "../../src/gtag";
+import styles from "@/styles/Organisms/footer.module.css";
+import * as gtag from "@/src/gtag";
 
-import BigLogo from "../Molecules/logo";
+import React, {useState} from "react";
 
-export class Footer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      time: 0,
-      project: this.props.projectPath,
-      contact: this.props.contactPath,
-      service: this.props.servicePath,
-      blog: this.props.blogPath,
-    };
-  }
+import {BigLogo} from "@/Molecules/logo";
 
-  render() {
+export function Footer(projectPath, contactPath, servicePath, blogPath){
+    const [count, setCount] = useState(0);
     const handler = () => {
-      this.setState({
-        time: this.state.time + 1,
-      });
-
-      // Information for sending to Analytics
+      setCount(count+1)
       gtag.event({
         action: "footerContactPushTime",
         category: "time",
-        label: this.state.time,
+        label: count
       });
     };
 
@@ -36,18 +22,18 @@ export class Footer extends Component {
         <div className={styles.bottom}>
           <div className={styles.botto__row}>
             <p className={styles.bottom__button}>
-              <a href={this.state.project}>Project →</a>
+              <a href={projectPath}>Project →</a>
             </p>
             <p className={styles.bottom__button} onClick={handler}>
-              <a href={this.state.contact}>Contact →</a>
+              <a href={contactPath}>Contact →</a>
             </p>
           </div>
           <div className={styles.botto__row}>
             <p className={styles.bottom__button}>
-              <a href={this.state.service}>Service →</a>
+              <a href={servicePath}>Service →</a>
             </p>
             <p className={styles.bottom__button}>
-              <a href={this.state.blog}>Blog →</a>
+              <a href={blogPath}>Blog →</a>
             </p>
           </div>
         </div>
@@ -57,6 +43,5 @@ export class Footer extends Component {
       </div>
     );
   }
-}
 
 export default Footer;

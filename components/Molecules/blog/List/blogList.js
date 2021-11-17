@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./article.module.css";
+import styles from "@/styles/Molecules/blogList.module.css";
 
-export default function BlogList(blogs) {
+export function BlogList(blogs) {
   return blogs.map((blogelm) => (
     <div key={blogelm.blogNumber} className={styles.article}>
       <Link href={{ pathname: `blog/${blogelm.blogNumber}/` }}>

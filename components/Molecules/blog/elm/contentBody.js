@@ -1,8 +1,8 @@
 /* eslint-disable */
 import { RichText } from "@graphcms/rich-text-react-renderer";
-import styles from "./contentBody.module.css";
+import styles from "@/styles/Molecules/contentBody.module.css";
 
-export default function ContentBody(blog, bodyContents) {
+export function ContentBody(blog, bodyContents) {
   return (
     <>
       {blog.tocVisible ? (
@@ -11,11 +11,6 @@ export default function ContentBody(blog, bodyContents) {
             <h2>{blog.title}</h2>
             <nav
               className={`${styles.toc} toc`}
-              style={{
-                paddingLeft: "20px",
-                fontSize: "16px",
-                fontWeight: "500",
-              }}
             />
           </div>
         </>

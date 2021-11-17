@@ -1,16 +1,13 @@
-import React, { Component } from "react";
-import styles from "./body.module.css";
+import styles from "@/styles/Organisms/blogListBody.module.css";
 
-import TopComponent from "../../../Molecules/blog/List/topBlog";
-import BlogList from "../../../Molecules/blog/List/blogList";
-import RankList from "../../sub/rankList";
+import {TopComponent} from "@/Molecules/blog/List/topBlog";
+import {BlogList} from "@/Molecules/blog/List/blogList";
+import {RankList} from "@/Organisms/sub/rankList";
 
-import en from "../../../../public/locales/en/common.json";
-import ja from "../../../../public/locales/ja/common.json";
+import en from "@/public/locales/en/common.json";
+import ja from "@/public/locales/ja/common.json";
 
-export class Body extends Component {
-  render() {
-    const { locale, rawBlogs, rawRanking } = this.props;
+export function Body(locale, rawBlogs, rawRanking){
     let t = locale === "ja" ? ja : en;
 
     const blogs = [];
@@ -59,6 +56,3 @@ export class Body extends Component {
       </div>
     );
   }
-}
-
-export default Body;
