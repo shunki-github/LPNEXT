@@ -1,18 +1,16 @@
 import {
   FormControl,
   FormLabel,
-  ChakraProvider,
   Textarea,
   Input,
   Text,
 } from "@chakra-ui/react";
 
-import {ContBlue} from "@/Atoms/button/ContBlue";
+import {ContBlue} from "@/components/Atoms/button/ContBlue";
 import styles from "@/styles/Molecules/form.module.css";
 
 export function Form(sendfunc, contactText) {
   return (
-    <ChakraProvider>
       <form onSubmit={sendfunc}>
         <div className={styles.form__input}>
           <FormControl isRequired>
@@ -38,6 +36,5 @@ export function Form(sendfunc, contactText) {
           {ContBlue(contactText.submit)}
         </div>
       </form>
-    </ChakraProvider>
   );
 }

@@ -1,8 +1,7 @@
-import { ChakraProvider, Box } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
-export function OutWhite(text) {
+export function OutBlue(text) {
   return (
-    <ChakraProvider>
       <Box
         as="button"
         height="40px"
@@ -10,19 +9,18 @@ export function OutWhite(text) {
         transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
         border="1px"
         px="20px"
-        width="100px"
         borderRadius="8px"
         fontSize="14px"
         fontWeight="semibold"
         bg="none"
-        borderColor="white"
-        color="white"
+        borderColor="#062572"
+        color="#062572"
         _hover={{
-          opacity: 0.5,
+          bg: "#062572",
+          color: "white",
         }}
       >
         {text}
       </Box>
-    </ChakraProvider>
   );
 }

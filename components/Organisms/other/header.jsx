@@ -1,5 +1,5 @@
-import { JA, EN } from "@/Molecules/i18n";
-import {BigLogo} from "@/Molecules/logo";
+import { JA, EN } from "@/components/Molecules/i18n";
+import {BigLogo} from "@/components/Molecules/logo";
 import styles from "@/styles/Organisms/unHomeHeader.module.css";
 
 export function Header(locale, asPath) {

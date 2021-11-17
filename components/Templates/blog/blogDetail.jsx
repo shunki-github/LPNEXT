@@ -3,9 +3,9 @@ import Head from "next/head";
 import React, { useEffect } from "react";
 import tocbot from "tocbot";
 
-import {Header} from "@/Organisms/other/header";
-import {Body} from "@/Organisms/other/elm/body";
-import {BlogFooter} from "@/Organisms/other/elm/footerBlog";
+import {Header} from "@/components/Organisms/other/header";
+import {Body} from "@/components/Organisms/other/elm/body";
+import {BlogFooter} from "@/components/Organisms/other/elm/footerBlog";
 
 import en from "@/public/locales/en/common.json";
 import ja from "@/public/locales/ja/common.json";

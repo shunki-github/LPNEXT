@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import {TempHome} from "@/Templates/home";
+import {TempHome} from "@/components/Templates/home";
 
 export default function Home() {
   const { locale, asPath } = useRouter();

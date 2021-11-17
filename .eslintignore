@@ -1,3 +1,6 @@
 node_modules/
 .next/
 .vercel/
+jsconfig.json
+tsconfig.json
+*.config.js
