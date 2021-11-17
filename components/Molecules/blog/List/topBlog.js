@@ -3,17 +3,12 @@ import Image from "next/image";
 import styles from "./article.module.css";
 
 export default function TopBlog(topBlog) {
-  if (topBlog === undefined) return;
+  if (!topBlog) return;
 
   return (
     <div className={styles["article--top"]}>
-      <Link
-        href={{
-          pathname: `blog/${topBlog.blogNumber}/`,
-        }}
-        passHref={true}
-      >
-        <div>
+      <Link href={{ pathname: `blog/${topBlog.blogNumber}/` }}>
+        <a>
           <Image
             src={topBlog.ogpImage.url}
             alt={`${topBlog.title} topImage`}
@@ -35,7 +30,7 @@ export default function TopBlog(topBlog) {
               <p className={"grey"}>{topBlog.createdAt.split("T")[0]}</p>
             </div>
           </div>
-        </div>
+        </a>
       </Link>
     </div>
   );

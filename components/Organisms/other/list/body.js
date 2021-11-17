@@ -33,7 +33,7 @@ export class Body extends Component {
         <div className={styles.blog}>
           {TopComponent(topBlog)}
           <div className={styles.blog__list}>
-            {topBlog === undefined ? (
+            {!topBlog ? (
               <div className={styles["preparation--big"]}>
                 {t.sub.preparationText}
               </div>

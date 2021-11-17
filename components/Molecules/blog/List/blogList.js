@@ -5,8 +5,8 @@ import styles from "./article.module.css";
 export default function BlogList(blogs) {
   return blogs.map((blogelm) => (
     <div key={blogelm.blogNumber} className={styles.article}>
-      <Link href={{ pathname: `blog/${blogelm.blogNumber}/` }} passHref={true}>
-        <div>
+      <Link href={{ pathname: `blog/${blogelm.blogNumber}/` }}>
+        <a>
           <Image
             src={blogelm.ogpImage.url}
             alt={`${blogelm.title} topImage`}
@@ -26,7 +26,7 @@ export default function BlogList(blogs) {
               <p className={"grey"}>{blogelm.createdAt.split("T")[0]}</p>
             </div>
           </div>
-        </div>
+        </a>
       </Link>
     </div>
   ));
