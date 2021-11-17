@@ -15,17 +15,17 @@ import {
 import styles from "./share.module.css";
 
 export default function ShareList(data, asPath) {
-  if (data === undefined) return <div />;
+  if (!data) return <div />;
 
   return (
     <div className={styles.share}>
-      <EmailShareButton url={"dev.oovo.app" + asPath} body={data.title}>
+      <EmailShareButton url={`dev.oovo.app${asPath}`} body={data.title}>
         <div className={`${styles.icon} ${styles.mail}`}>
           <MdMail color="white" fontSize="1.3em" />
         </div>
       </EmailShareButton>
       <PinterestShareButton
-        url={"dev.oovo.app" + asPath}
+        url={`dev.oovo.app${asPath}`}
         media={data.ogpImage.url}
         description={data.title}
       >
@@ -34,7 +34,7 @@ export default function ShareList(data, asPath) {
         </div>
       </PinterestShareButton>
       <FacebookShareButton
-        url={"dev.oovo.app" + asPath}
+        url={`dev.oovo.app${asPath}`}
         title={data.title}
         hashtag="oovo"
       >
@@ -43,7 +43,7 @@ export default function ShareList(data, asPath) {
         </div>
       </FacebookShareButton>
       <TwitterShareButton
-        url={"dev.oovo.app" + asPath}
+        url={`dev.oovo.app${asPath}`}
         title={data.title}
         hashtags={["oovo", data.category]}
       >
@@ -52,8 +52,8 @@ export default function ShareList(data, asPath) {
         </div>
       </TwitterShareButton>
       <LinkedinShareButton
-        url={"dev.oovo.app" + asPath}
-        source={"dev.oovo.app" + asPath}
+        url={`dev.oovo.app${asPath}`}
+        source={`dev.oovo.app${asPath}`}
         summary={data.title}
       >
         <div className={`${styles.icon} ${styles.linkedin}`}>

@@ -39,7 +39,7 @@
   justify-content: right;
 }
 
-.nav div {
+.nav a {
   display: block;
   padding-right: 10px;
 }

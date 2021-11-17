@@ -6,12 +6,8 @@ import styles from "./logo.module.css";
 
 export default function BigLogo() {
   return (
-    <Link
-      href={{
-        pathname: `/`,
-      }}
-      passHref={true}
-    >
+    <Link href={{ pathname: `/` }}>
+      <a>
       <div className={styles.big}>
         <div className={styles.big__icon}>
           <img src={`${process.env.NEXT_PUBLIC_BASE_LINK}/MakaseruICON.webp`} alt="Makaseru アイコン" />
@@ -20,6 +16,7 @@ export default function BigLogo() {
           <img src={`${process.env.NEXT_PUBLIC_BASE_LINK}/MakaseruNAME.webp`} alt="Makaseru ネーム" />
         </div>
       </div>
+      </a>
     </Link>
   );
 }

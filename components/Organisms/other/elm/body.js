@@ -46,8 +46,10 @@ export class Body extends Component {
     return (
       <>
         <div className={styles["blog-header"]}>
-          <Link href="/blog" passHref={true}>
+          <Link href="/blog">
+            <a>
             <h1>MAKASERUブログ</h1>
+            </a>
           </Link>
         </div>
         <div className={styles.rowcontent}>
@@ -83,10 +85,10 @@ export class Body extends Component {
             <div>
               <div>{TopImage(blog)}</div>
               <div className={styles.content__body__desc}>
-                {blog === undefined ? <div /> : ContentDesc(descContents)}
+                {!blog ? <div /> : ContentDesc(descContents)}
               </div>
               <div className={styles.content__main__toc}>
-                {blog === undefined ? <div /> : ContentBody(blog, bodyContents)}
+                {!blog ? <div /> : ContentBody(blog, bodyContents)}
               </div>
             </div>
           </div>

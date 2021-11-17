@@ -4,10 +4,10 @@ import styles from "./sub.module.css";
 export default function RelateList(rawRelated, from = "") {
   return rawRelated.map((relate) => (
     <div key={relate.key} className={styles["side-unit"]}>
-      <Link href={from + relate.blogNumber.toString()} passHref={true}>
-        <div>
+      <Link href={from + relate.blogNumber.toString()}>
+        <a>
           <p>{relate.title}</p>
-        </div>
+        </a>
       </Link>
     </div>
   ));

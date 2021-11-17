@@ -5,8 +5,8 @@ import styles from "./sub.module.css";
 export default function RelateListImage(rawRelated, from = "") {
   return rawRelated.map((relate) => (
     <div key={relate.key} className={styles["card-image"]}>
-      <Link href={from + relate.blogNumber.toString()} passHref={true}>
-        <div>
+      <Link href={from + relate.blogNumber.toString()}>
+        <a>
           <Image
             src={relate.ogpImage.url}
             alt={`${relate.title} topImage`}
@@ -18,7 +18,7 @@ export default function RelateListImage(rawRelated, from = "") {
             <p>{relate.createdAt.split("T")[0]}</p>
             <h4>{relate.title}</h4>
           </div>
-        </div>
+        </a>
       </Link>
     </div>
   ));
