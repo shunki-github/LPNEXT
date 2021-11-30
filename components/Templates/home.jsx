@@ -14,7 +14,7 @@ export function TempHome(asPath, locale) {
         />
         <link rel="icon" href="/MakaseruICO.webp" />
         <script type="application/ld+json">
-          {{
+          {JSON.stringify({
             "@context": "http://schema.org",
             "@type": "Product",
             "name": "MAKASERU",
@@ -24,7 +24,7 @@ export function TempHome(asPath, locale) {
                 "@type": "Brand",
                 "name": "MAKASERU"
             }
-          }}
+          })}
         </script>
       </Head>
       <main>

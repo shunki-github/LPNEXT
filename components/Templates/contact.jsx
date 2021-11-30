@@ -21,8 +21,8 @@ export function TempContact(asPath, locale, router, sendfunc) {
         />
         <link rel="icon" href="/MakaseruICO.webp" />
         <script type="application/ld+json">
-          {{
-            "@context": "http://schema.org",
+          {JSON.stringify(
+            {"@context": "http://schema.org",
             "@type": "ContactPage",
             "name": "MAKASERU",
             "image": `${process.env.NEXT_PUBLIC_LOGO_ICON_PATH}`,
@@ -32,7 +32,7 @@ export function TempContact(asPath, locale, router, sendfunc) {
             },
             "headline": "MAKASERU Contact Page",
             "description": "MAKASERUのコンタクトページです",
-          }}
+        })}
         </script>
       </Head>
       <main>

@@ -45,7 +45,7 @@ export function TempBlogDetail(asPath, locale, staticData) {
         <meta name="description" content={`${headerDesc}`} />
         <link rel="icon" href="/MakaseruICO.webp" />
         <script type="application/ld+json">
-          {{
+          {JSON.stringify({
             "@context": "http://schema.org",
             "@type": "BlogPosting",
             "name": "MAKASERU",
@@ -68,7 +68,7 @@ export function TempBlogDetail(asPath, locale, staticData) {
                 }
             },
             "description": `${headerDesc}`,
-          }}
+          })}
           </script>
       </Head>
       <main>
