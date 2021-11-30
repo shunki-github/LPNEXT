@@ -23,24 +23,20 @@ export function TempBlog(asPath, locale, staticData) {
           content="「MAKASERU Blog」は経営者、事業主等意思決定者向けに、モバイルアプリやWebアプリ、AIなどのシステム開発やマーケティングに関連したコンテンツを配信しています。"
         />
         <link rel="icon" href="/MakaseruICO.webp" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `
-                        {
-                        "@context": "http://schema.org",
-                        "@type": "Blog",
-                        "name": "MAKASERU Blog",
-                        "image": "${process.env.NEXT_PUBLIC_LOGO_ICON_PATH}"
-                        "description": "MAKASERU Blogは非開発者向けに情報発信をするメディアです。企画から開発、マーケティングなどのコンテンツを配信中です。",
-                        "about": "非開発者向け情報を発信をするメディア"
-                        "brand": {
-                            "@type": "Brand",
-                            "name": "MAKASERU"
-                          }
-                        }`,
-          }}
-        />
+        <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "Blog",
+              "name": "MAKASERU Blog",
+              "image": `${process.env.NEXT_PUBLIC_LOGO_ICON_PATH}`,
+              "description": "MAKASERU Blogは非開発者向けに情報発信をするメディアです。企画から開発、マーケティングなどのコンテンツを配信中です。",
+              "about": "非開発者向け情報を発信をするメディア",
+              "brand": {
+                  "@type": "Brand",
+                  "name": "MAKASERU"
+                }
+            })}
+          </script>
       </Head>
       <main>
         {Header(locale, asPath)}

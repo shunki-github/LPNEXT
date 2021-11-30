@@ -20,24 +20,20 @@ export function TempContact(asPath, locale, router, sendfunc) {
           content="MAKASERU への問い合わせフォームになります。"
         />
         <link rel="icon" href="/MakaseruICO.webp" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `
-                        {
-                        "@context": "http://schema.org",
-                        "@type": "ContactPage",
-                        "name": "MAKASERU",
-                        "image": "${process.env.NEXT_PUBLIC_LOGO_ICON_PATH}"
-                        "mainEntity": {
-                            "@type": "WebPage",
-                            "@id": "https://dev.oovo.app/"
-                        },
-                        "headline": "MAKASERU Contact Page",
-                        "description": "MAKASERUのコンタクトページです",
-                        }`,
-          }}
-        />
+        <script type="application/ld+json">
+          {JSON.stringify(
+            {"@context": "http://schema.org",
+            "@type": "ContactPage",
+            "name": "MAKASERU",
+            "image": `${process.env.NEXT_PUBLIC_LOGO_ICON_PATH}`,
+            "mainEntity": {
+                "@type": "WebPage",
+                "@id": "https://dev.oovo.app/"
+            },
+            "headline": "MAKASERU Contact Page",
+            "description": "MAKASERUのコンタクトページです",
+        })}
+        </script>
       </Head>
       <main>
         {Header(locale, asPath)}
